@@ -1,6 +1,6 @@
 ![Research Asterism: frame questions, examine assumptions, choose an informative test](assets/banner.svg)
 
-[![Validate package](https://github.com/Ash-end/research-asterism/actions/workflows/validate.yml/badge.svg)](https://github.com/Ash-end/research-asterism/actions/workflows/validate.yml) [![MIT](assets/license.svg)](LICENSE) [![Version 0.4.0](assets/version.svg)](https://github.com/Ash-end/research-asterism/releases/tag/v0.4.0)
+[![Validate package](https://github.com/Ash-end/research-asterism/actions/workflows/validate.yml/badge.svg)](https://github.com/Ash-end/research-asterism/actions/workflows/validate.yml) [![MIT](assets/license.svg)](LICENSE) [![Version 0.4.1](assets/version.svg)](https://github.com/Ash-end/research-asterism/releases/tag/v0.4.1)
 
 # Research Asterism · 科研判断技能
 
@@ -51,7 +51,7 @@ python 'C:\path\to\research-asterism\scripts\install_skill.py' --target '.agents
 | 想法评估与最小验证 | 检查主张、近邻与竞争解释，选择能改变判断的设计 | [不可比报告](site/workflows.html#idea) |
 | 结果诊断与下一步 | 核查测量、机制是否生效、精度及正负证据范围 | [不稳定差异](site/workflows.html#result) |
 
-**第一性原理作为按需推理工具：**拆开目标与观测，说明前提和约束的来源；跨领域迁移携带成立条件；产生不同预测；核查测试是否触及机制。它与文献和实验配合，不凭“本质”宣告事实，不强迫所有学科还原成物理或数学公理。[原创方法指南](docs/HANDBOOK.md)。
+**第一性原理作为按需推理工具：**拆开目标与观测，说明前提和约束的来源；跨领域迁移携带成立条件；产生不同预测；用独立、预先定义的检查区分干预施加、机制响应和结局；已施加干预却未出现预测机制，可以反驳该环节，不自动算无效试验。它与文献和实验配合，不凭“本质”宣告事实，不强迫所有学科还原成物理或数学公理。[原创方法指南](docs/HANDBOOK.md)。
 
 ## 一个简短示例
 

@@ -28,6 +28,10 @@ The original older comparison is also retained, with its fixed ordering, length 
 
 v0.4.0 adds a first-principles reference and an entrypoint route to it. The old six references, scientific inputs, answers, masks and judgments remain byte-identical. The original v0.3.0 entrypoint is kept as an [evaluation snapshot](../evals/snapshots/v0.3.0/SKILL.md); its recorded source fingerprint refers to that historical version, not today's entrypoint. There is no new with/without benchmark for v0.4.0.
 
+## v0.4.1 precision patch
+
+The [targeted intervention-chain case](../evals/INTERVENTION-CHAIN-REVIEW.md) records an author response separating delivery, predicted mediator response and outcome. A delivered intervention with an absent predicted mechanism response can refute that prediction; it is not automatically an invalid test. The checks are independent and predefined, rather than inferred from outcome success. This one case is development review, not a new independent comparison; v0.4.0's four author responses remain historical and unchanged.
+
 ## How to improve this evidence
 
 Use fresh cases before editing against them; freeze source, host configuration, tool access and output constraints; compare old/new versions under matched conditions; mask identities and balance order; preserve raw results and disagreements. Retrieval access and cost authorization must be explicit. Judge semantic reasoning, not keyword counts. Human domain review and broader task sampling are still needed.

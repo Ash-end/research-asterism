@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0",
+  "version": "0.4.1",
   "date": "2026-10-03",
   "execution": "Local Edge via Playwright; five pages, four viewport widths",
   "checks": [

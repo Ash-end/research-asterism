@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.1 — 2026-10-03
+
+- Distinguished undelivered intervention, absent predicted mechanism response after delivery, and absent outcome response after mechanism change. Required independent predefined operational checks instead of inferring activation from success.
+- Added one synthetic three-branch author logic case; no new independent effectiveness comparison.
+- Replaced diagonal-arrow glyphs with original inline SVG and moved acquisition/parent-repository history out of current public source notes while retaining provenance and rights uncertainty.
+
 ## 0.4.0 — 2026-10-03
 
 - Added optional assumption-led reasoning: target/observation separation, principle-transfer conditions, competing predictions and intervention validity.

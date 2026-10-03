@@ -10,7 +10,7 @@ An [official NTU lecture notice](https://www.ntu.edu.tw/english/spotlight/2017/1
 
 The author's [2011 literature-survey article](https://mhperng.blogspot.com/2011/04/literature-survey_18.html) is a canonical source lead. Direct retrieval encountered an access challenge in this revision, so a complete article comparison is not claimed. His [copyright statement](https://mhperng.blogspot.com/p/blog-page_78.html) was inspected and does not provide an open redistribution license; a [2015 notice](https://mhperng.blogspot.com/2015/05/blog-post_11.html) returned HTTP 429. Public availability and user adaptation are not treated as blanket permission.
 
-The supported Library materialization previously failed on Windows metadata handling. After separate authorization, a local 14-page copy matching the recorded byte size was fully read, including fresh render inspection of pages 4, 10 and 11. Its text matched the earlier extraction after whitespace normalization. Library supplied no content hash; byte identity with the Library item remains unverified. No document, transcription, figure or private identifier enters the release.
+The supplied adaptation was read in full, including its diagrams. Its exact relationship to a verified public original and the rights in individual passages or figures were not independently established. It is not redistributed. This guide uses independent organization, original wording and original artwork; source uncertainty and redistribution boundaries remain explicit.
 
 General inspiration carried forward in original language: reason from the problem's important attributes and application needs; study method families and their evolution; understand assumptions and limits; alternate reading with retrieval; compare needs against capabilities; check proof conditions and logical dependencies.
 
@@ -47,7 +47,7 @@ The theory and qualitative branches are original methodological guidance. They a
 
 ## Maintainer-created first-principles skill
 
-The complete local `first-principles-research` entrypoint and both references were read. The path matches the maintainer's identified custom skill; no upstream attribution or independent license file was present, and its local collection had no Git history. Authorship and third-party absence are not inferred from that fact alone. This package uses original explanations of general mechanisms: target/observation separation, assumption provenance, conditional principle transfer, competing predictions, exploratory versus confirmatory work, and checking whether a test activates its mechanism. No text is copied, and domain-specific configurations, private project histories and local paths are excluded. This is not a third-party dependency or a grant of permission to run other projects.
+The complete local `first-principles-research` entrypoint and both references were read. The path matches the maintainer's identified custom skill; no upstream attribution or independent license file was present. Authorship and third-party absence are not inferred from that fact alone. This package uses original explanations of general mechanisms: target/observation separation, assumption provenance, conditional principle transfer, competing predictions, exploratory versus confirmatory work, and checking whether a test activates its mechanism. No text is copied, and domain-specific configurations, private project histories and local paths are excluded. This is not a third-party dependency or a grant of permission to run other projects.
 
 ## Website design history
 
@@ -55,4 +55,4 @@ The earlier published page used [MotionSites](https://motionsites.ai/) and its [
 
 ## License scope
 
-The [MIT license](LICENSE) applies only to original content within this package: instructions, references, examples, scripts, tests, documentation, original website, and permitted synthetic evaluation outputs. It does not change the parent repository's license, grant rights to cited sources, or claim ownership of authors' underlying ideas. The local parent repository had no existing license when inspected; no repository-wide license was added. Contributions must be original or carry compatible, clearly recorded rights.
+The [MIT license](LICENSE) applies only to original content within this package: instructions, references, examples, scripts, tests, documentation, original website, and permitted synthetic evaluation outputs. It does not grant rights to cited sources or claim ownership of authors' underlying ideas. Contributions must be original or carry compatible, clearly recorded rights.

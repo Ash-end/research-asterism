@@ -24,7 +24,7 @@ Output can include a supported starting point, an explicitly speculative mechani
 
 ## 3. Result diagnosis and next step / 结果诊断与下一步
 
-Use for positive, negative, conflicting, imprecise or theoretical results. Check run and measurement validity, whether the mechanism was activated, and whether the design can answer the claim. Then weigh alternatives and choose an informative next action.
+Use for positive, negative, conflicting, imprecise or theoretical results. Check run and measurement validity, intervention delivery, the independently measured predicted mechanism response, and whether the design can answer the claim. A delivered intervention with no predicted mechanism response can challenge that link; it is not automatically an invalid test. Define operational checks before seeing outcomes and do not infer activation from success. Then weigh alternatives and choose an informative next action.
 
 **Synthetic input:** “Repeated instrument readings changed direction after a material modification. Is the mechanism impossible?”
 

@@ -1,6 +1,6 @@
 ![Research Asterism: frame questions, examine assumptions, choose an informative test](assets/banner.svg)
 
-[![Validate package](https://github.com/Ash-end/research-asterism/actions/workflows/validate.yml/badge.svg)](https://github.com/Ash-end/research-asterism/actions/workflows/validate.yml) [![MIT](assets/license.svg)](LICENSE) [![Version 0.4.0](assets/version.svg)](https://github.com/Ash-end/research-asterism/releases/tag/v0.4.0)
+[![Validate package](https://github.com/Ash-end/research-asterism/actions/workflows/validate.yml/badge.svg)](https://github.com/Ash-end/research-asterism/actions/workflows/validate.yml) [![MIT](assets/license.svg)](LICENSE) [![Version 0.4.1](assets/version.svg)](https://github.com/Ash-end/research-asterism/releases/tag/v0.4.1)
 
 # Research Asterism
 
@@ -53,7 +53,7 @@ Do not run experiments.
 | Idea assessment and minimal test | Examines the claim, nearest neighbors, competing explanations and a decision-changing validation | [Incomparable reports](site/workflows.html#idea) |
 | Result diagnosis and next step | Checks measurement, mechanism activation, uncertainty and the scope of positive or negative evidence | [Unstable differences](site/workflows.html#result) |
 
-**First-principles reasoning** is optional support within these modes: separate targets from observations; trace assumptions and constraints; transfer principles only with their conditions; derive competing predictions; check whether the test activated its mechanism. It complements literature and experiments. It does not turn intuition into fact or force every field into physics or mathematical axioms.
+**First-principles reasoning** is optional support within these modes: separate targets from observations; trace assumptions and constraints; transfer principles only with their conditions; derive competing predictions; distinguish delivery from the predicted mechanism response and the outcome, using independent predefined checks. A delivered intervention whose mechanism prediction fails is not automatically an invalid test. It complements literature and experiments. It does not turn intuition into fact or force every field into physics or mathematical axioms.
 
 ## A compact example
 

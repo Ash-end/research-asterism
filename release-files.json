@@ -89,7 +89,10 @@
     "evals/snapshots/v0.3.0/references/claim-design.md",
     "scripts/verify_evaluation.py",
     "assets/social-preview.png",
-    "evals/results/presentation-site-check.json"
+    "evals/results/presentation-site-check.json",
+    "evals/intervention-chain-case.json",
+    "evals/results/intervention-chain-author-run.json",
+    "evals/INTERVENTION-CHAIN-REVIEW.md"
   ],
   "runtime_files": [
     "SKILL.md",
