@@ -8,6 +8,10 @@ Identify the intended claim, actual observation, provenance, protocol, and uncer
 
 Before ranking results, ask whether they estimate the same quantity under comparable conditions. A larger number across different splits, metrics, budgets, or populations is not comparative evidence. Keep each observation with its protocol and propose a matched comparison. Avoid converting incompatible results into a leaderboard.
 
+Identify the claim type before diagnosing it; use the relevant [design branch](claim-design.md). Distinguish assignment, independent sampling and measurement units. A result across repeated readings of one sample need not generalize to independently produced samples; a validation split across rows need not assess new participants or sites. Check how this affects both the target and uncertainty. An estimate and interval do not overcome invalid controls, selection, confounding or information unavailable at use time.
+
+Inspect which configurations, subgroups and outcomes were tried and selected, as well as failed, timed-out, missing and excluded observations. An interval computed after selecting the best configuration/subgroup may not cover the selection process. Assess whether the claim needs a fresh assessment set, selection-aware analysis or narrower exploratory wording. Specify whether reported uncertainty covers samples, entities, sites, initialization or another source of variation; they are not interchangeable.
+
 ## Build competing explanations
 
 Connect the phenomenon to a dependency chain: input and measurement → mechanism and assumptions → expected outcome → observed outcome. Identify where evidence supports the chain and where it does not.
@@ -21,6 +25,8 @@ Pick the cheapest check that distinguishes consequential explanations. A fixed-b
 An improvement supports the tested comparison and conditions; it does not automatically identify the mechanism or demonstrate generality. Use ablations and independent settings when those claims matter.
 
 A null or adverse result restricts the particular intervention, protocol, and effect range studied. Report effect estimates and precision if available. Failure to reject a null is not proof of equivalence, absence, or impossibility. A small, noisy run may be inconclusive. Adequately sensitive evidence can justify stopping the tested formulation without rejecting an entire research direction.
+
+To claim equivalence, justify a margin for the actual scientific/application quantity before inspecting the result and use an appropriate interval/test procedure. Instrument repeatability alone does not define a scientifically negligible effect. If effect size or precision is unavailable, request the relevant analysis or design information rather than manufacture an interval or imply that extra repetitions must solve the problem.
 
 If a method's apparent gain disappears after controlling a confounder, update the claim and decision. Preserve negative observations instead of dropping them to rescue a story. A new failure or boundary is only a candidate contribution until reproducibility and existing knowledge have been assessed.
 

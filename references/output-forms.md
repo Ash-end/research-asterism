@@ -4,7 +4,9 @@ Use the smallest combination that serves the decision. Omit irrelevant fields, s
 
 ## Question card
 
-`Decision now | phenomenon/task | beneficiary and evidence of need | target setting | bounded question | comparator | meaningful outcome | assumptions | decisive uncertainty`
+`Decision now | object/phenomenon | claim type | conditions/population/time | target quantity or interpretation | bounded question | comparator | assumptions | decisive uncertainty`
+
+For empirical design, add assignment/sampling/measurement units and validation split only when relevant. A theoretical question instead needs its domain, quantifiers and proof obligations. Qualitative work needs evidence-to-interpretation scope and rival accounts. Omit fields that do not affect the decision.
 
 ## Method family map
 
@@ -18,14 +20,14 @@ Dates, origins, or relationships not verified stay unknown. Membership can overl
 | Property and operational definition | Application/setting | Priority or threshold | Requirement basis | Unknowns |
 | --- | --- | --- | --- | --- |
 
-This is a statement of needs. Distinguish essential constraints from preferences and assumptions. If using qualitative symbols, define them as importance, not capability.
+This is a statement of needs, not of method assumptions or measured capability. Define the property and its link to the decision. A proxy such as a switch count cannot stand for maintenance labor without evidence of that relationship. Distinguish essential constraints from preferences and assumptions. If using qualitative symbols, define them as importance, not capability.
 
 ## Method performance matrix
 
 | Method/family | Property, unit, direction | Estimate and uncertainty | Protocol/setting/budget | Evidence locator and status | Comparable with |
 | --- | --- | --- | --- | --- | --- |
 
-This is a statement of capability under conditions. Distinguish measured, author-reported, inferred, missing, and incompatible results. Define qualitative symbols as performance only within a declared compatible protocol. Do not copy importance marks from the requirements matrix into performance cells.
+This contains actual outcome estimates or supported bounds under conditions. State measured versus author-reported support. Do not insert suitability assumptions or a speculative mechanism benefit as a performance estimate. Without outcome evidence, write "no data" and describe the needed measurement separately. Incompatible results stay with their own protocols; no ranking follows. Keep assumptions in the family map and gaps in evidence status. Do not copy importance marks from requirements into performance cells.
 
 ## Hypothesis and nearest-neighbor comparison
 

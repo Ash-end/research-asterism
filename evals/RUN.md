@@ -1,5 +1,7 @@
 # Traceable native-agent run
 
+Historical record: answers, preferences and original input hashes below describe the earlier published version, not the scientific revision in v0.3.0. They are retained unchanged. The fixed P/Q order, one context per condition, explicit case cues and reviewer-reported answer-length imbalance limit interpretation. See [the scientific review](SCIENTIFIC-REVIEW.md) for confirmed content defects and the new per-case development run.
+
 Evaluation date: 2026-10-03. This records the existing run; the release-review fixes did not rerun model evaluation. The dispatch messages below are the actual prompts, with only the absolute local workspace prefix replaced by `<WORKSPACE>`. This deterministic path redaction preserves the remaining wording, allowed inputs, restrictions, and output schemas.
 
 ## Available execution facts and limits

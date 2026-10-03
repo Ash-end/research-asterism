@@ -79,6 +79,20 @@ class PackageTests(unittest.TestCase):
         path.write_text(path.read_text(encoding='utf-8').replace('name: research-methodology', 'name: renamed-skill', 1), encoding='utf-8')
         self.assertTrue(any('Skill name must be research-methodology' in e for e in validate(self.root)))
 
+    def test_scientific_raw_case_drift_is_reported(self):
+        path = self.root / 'evals/scientific-inputs/r01.json'
+        raw = json.loads(path.read_text(encoding='utf-8'))
+        raw['request'] += ' synthetic divergent input'
+        path.write_text(json.dumps(raw), encoding='utf-8')
+        self.assertTrue(any('Aggregate/raw case mismatch' in e for e in validate(self.root)))
+
+    def test_duplicate_scientific_case_is_reported(self):
+        path = self.root / 'evals/scientific-cases.json'
+        data = json.loads(path.read_text(encoding='utf-8'))
+        data['cases'].append(data['cases'][0])
+        path.write_text(json.dumps(data), encoding='utf-8')
+        self.assertTrue(any('Scientific cases need unique IDs' in e for e in validate(self.root)))
+
 
 if __name__ == '__main__':
     unittest.main()

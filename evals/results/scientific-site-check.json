@@ -1,0 +1,291 @@
+{
+  "scope": "Browser behavior and explicit content contract; not scientific validity",
+  "browser": "Chromium via Playwright",
+  "checks": [
+    {
+      "name": "root redirect preserves project subpath",
+      "ok": true
+    },
+    {
+      "name": "plain scientific title",
+      "ok": true
+    },
+    {
+      "name": "explicit local candidate status",
+      "ok": true
+    },
+    {
+      "name": "constructed scenario disclaimer",
+      "ok": true
+    },
+    {
+      "name": "initial map visible",
+      "ok": true
+    },
+    {
+      "name": "three distinct mode tabs",
+      "ok": true
+    },
+    {
+      "name": "assumptions kept in separate table",
+      "ok": true
+    },
+    {
+      "name": "separate requirement and performance matrices",
+      "ok": true
+    },
+    {
+      "name": "all displayed synthetic estimates explicitly have no data",
+      "ok": true
+    },
+    {
+      "name": "performance cells contain no suitability assumptions or maintenance proxies",
+      "ok": true
+    },
+    {
+      "name": "evidence status has separate display",
+      "ok": true
+    },
+    {
+      "name": "mouse selects idea",
+      "ok": true
+    },
+    {
+      "name": "mouse selects result",
+      "ok": true
+    },
+    {
+      "name": "mouse selects map",
+      "ok": true
+    },
+    {
+      "name": "ArrowRight selects next tab",
+      "ok": true
+    },
+    {
+      "name": "End selects final tab",
+      "ok": true
+    },
+    {
+      "name": "Home selects first tab",
+      "ok": true
+    },
+    {
+      "name": "ArrowLeft wraps",
+      "ok": true
+    },
+    {
+      "name": "clipboard exact content install-code",
+      "ok": true
+    },
+    {
+      "name": "installation uses manifest and refuses existing directory",
+      "ok": true
+    },
+    {
+      "name": "clipboard exact content prompt-code",
+      "ok": true
+    },
+    {
+      "name": "stable invocation",
+      "ok": true
+    },
+    {
+      "name": "clipboard fallback selects actual prompt",
+      "ok": true
+    },
+    {
+      "name": "clipboard fallback informs user",
+      "ok": true
+    },
+    {
+      "name": "landing no horizontal overflow at 320",
+      "ok": true
+    },
+    {
+      "name": "landing no horizontal overflow at 390",
+      "ok": true
+    },
+    {
+      "name": "landing no horizontal overflow at 768",
+      "ok": true
+    },
+    {
+      "name": "landing no horizontal overflow at 1440",
+      "ok": true
+    },
+    {
+      "name": "reduced motion disables smooth scroll",
+      "ok": true
+    },
+    {
+      "name": "docs no horizontal overflow at 320",
+      "ok": true
+    },
+    {
+      "name": "docs no horizontal overflow at 390",
+      "ok": true
+    },
+    {
+      "name": "docs no horizontal overflow at 768",
+      "ok": true
+    },
+    {
+      "name": "docs no horizontal overflow at 1440",
+      "ok": true
+    },
+    {
+      "name": "three constructed examples in docs",
+      "ok": true
+    },
+    {
+      "name": "docs disclosure opens",
+      "ok": true
+    },
+    {
+      "name": "documentation links stay inside project",
+      "ok": true
+    },
+    {
+      "name": "all local linked resources reachable",
+      "ok": true
+    },
+    {
+      "name": "no browser errors",
+      "ok": true
+    },
+    {
+      "name": "no external asset requests",
+      "ok": true
+    },
+    {
+      "name": "default scenario readable without JavaScript",
+      "ok": true
+    },
+    {
+      "name": "other scenarios linked without JavaScript",
+      "ok": true
+    }
+  ],
+  "widths": [
+    {
+      "width": 320,
+      "scroll": 320,
+      "viewport": 320
+    },
+    {
+      "width": 390,
+      "scroll": 390,
+      "viewport": 390
+    },
+    {
+      "width": 768,
+      "scroll": 768,
+      "viewport": 768
+    },
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "viewport": 1440
+    }
+  ],
+  "links": [
+    {
+      "url": "http://127.0.0.1:8767/research-methodology/site/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8767/research-methodology/site/index.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8767/research-methodology/site/docs.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8767/research-methodology/evals/SCIENTIFIC-REVIEW.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8767/research-methodology/evals/PROTOCOL.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8767/research-methodology/evals/RESULTS.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8767/research-methodology/SOURCES.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8767/research-methodology/README.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8767/research-methodology/LICENSE",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8767/research-methodology/examples/synthetic-examples.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8767/research-methodology/references/claim-design.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8767/research-methodology/references/output-forms.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8767/research-methodology/README.zh-CN.md",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "post_acceptance_wording_revision": {
+    "scope": "Targeted checks after two display wording fixes; model evaluation not rerun",
+    "browser": "Microsoft Edge / Playwright",
+    "checks": [
+      {
+        "name": "first assumption-table column is strategies/mechanisms",
+        "ok": true
+      },
+      {
+        "name": "combinable and nonexclusive strategies explicit",
+        "ok": true
+      },
+      {
+        "name": "local unpublished candidate status retained",
+        "ok": true
+      },
+      {
+        "name": "second mode title is validation design",
+        "ok": true
+      },
+      {
+        "name": "old sufficient-validation title removed",
+        "ok": true
+      },
+      {
+        "name": "changed caption/table no overflow at 320",
+        "ok": true
+      },
+      {
+        "name": "changed caption/table no overflow at 390",
+        "ok": true
+      },
+      {
+        "name": "docs retains nonexclusive strategy clarification",
+        "ok": true
+      },
+      {
+        "name": "docs clarifies proposed design is not a sufficiency guarantee",
+        "ok": true
+      }
+    ],
+    "previous_full_browser_record": "scientific-site-check.json (41 checks before these wording changes)"
+  }
+}

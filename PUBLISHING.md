@@ -1,5 +1,7 @@
 # Publication scope and maintenance
 
+Release v0.3.0, dated 2026-10-03, is published with explicit user authorization to the existing Ash-end/research-asterism repository and its GitHub Pages site. Publish only the allowlist. Private review/audit bundles remain outside it. Publication metadata is separate from the preserved scientific evaluation inputs and outputs.
+
 Research Asterism is published in [Ash-end/research-asterism](https://github.com/Ash-end/research-asterism). The live showcase is [GitHub Pages](https://ash-end.github.io/research-asterism/). Its stable skill identifier and install directory are research-methodology.
 
 Publish only this package's explicit [release manifest](release-files.json). A dedicated repository uses the package contents at its root; the ZIP retains a research-methodology/ prefix for installation compatibility. Never commit the enclosing skills collection or machine-specific discovery junction.

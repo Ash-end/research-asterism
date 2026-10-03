@@ -6,11 +6,11 @@ license: MIT
 
 # Research Methodology
 
-Help the researcher decide what to investigate, why it matters, and what evidence would change the decision. Lead with an actionable judgment, its uncertainty, and the next useful action. A topic alone is a valid starting point.
+Help form a research question and decide what the available evidence warrants. Start with the current judgment, its scope, and the next informative action. A topic alone is a valid starting point; an experiment plan is not a result.
 
 ## Start from the current decision
 
-Use the user's topic, materials, and existing project records to identify the decision at hand. Reuse their terminology, constraints, and documentation. Ask only for missing information that could change the next action; make provisional progress meanwhile. If the request is broad, give a provisional scope and a high-value narrowing question rather than a long intake form.
+Identify the object or phenomenon, relevant conditions, proposed claim, and decision. Define the target quantity when the question is quantitative, or the interpretive object when it is qualitative. Reuse existing records and constraints. Ask for missing information only when it would change the next step; give a provisional scope for a broad topic.
 
 Choose or combine the relevant mode, reading its reference before substantive work:
 
@@ -20,21 +20,21 @@ Choose or combine the relevant mode, reading its reference before substantive wo
 | Challenge an idea, develop ideas together, or choose a minimal validation | [Idea assessment and minimal test](references/idea-test.md) |
 | Explain success, failure, conflicting evidence, or a proof issue; decide what next | [Result diagnosis](references/result-diagnosis.md) |
 
-For source assessment, retrieval, or tools, read [Evidence and capabilities](references/evidence-tools.md). For a substantial structured output, use only the relevant parts of [Output forms](references/output-forms.md). These forms are optional, not a new mandatory project record system.
+For study design or claim validation, read the relevant branch of [Claim and design](references/claim-design.md): descriptive, predictive, causal, measurement, or theoretical claims require different evidence. Mixed and qualitative work need an explicit interpretation, not a forced statistical experiment. For retrieval or source support, use [Evidence and capabilities](references/evidence-tools.md). Use [Output forms](references/output-forms.md) only where helpful; no new mandatory record system is required.
 
 ## Shared reasoning spine
 
-Connect **problem attributes and actual needs → method families and assumptions → a specific mismatch or unresolved limit → evidence-grounded candidates → low-cost discriminating validation**. Move backward or loop retrieval and reading when new evidence changes the framing. Do not demand fixed numbers of papers, ideas, questions, or agents.
+Connect **scientific question or application goal → method mechanisms and assumptions → a specific unresolved limit → evidence-grounded hypotheses → sufficient discriminating validation**. Basic theory and measurement work do not need a prior user demand. Loop retrieval and reading when evidence changes the question; do not demand fixed counts of papers, ideas, questions, or agents.
 
-- Identify who or what benefits, the target setting, the failure that matters, and a meaningful outcome. Distinguish observed demand from assumed demand. A fashionable technique does not establish a problem.
+- Identify why the question matters and what observation or argument could resolve it. Separate a scientific question, an application requirement, and a chosen method; the method alone does not establish a problem.
 - Compare methods by mechanism, assumptions, and failure boundaries, not their names alone. Follow the evolution within each family to see which condition or capability changed.
-- Keep the **application requirements matrix** separate from the **method performance matrix**. Requirements describe importance or thresholds; performance describes measured or inferred capability under a protocol. Do not average them into a universal quality score. Unknown evidence is not poor performance; incompatible protocols do not establish a ranking.
-- Label consequential claims as **source fact**, **inference**, or **untested hypothesis**, with a locator or a clear basis. A source fact can be an author's reported result, not an independently verified truth. Verify the cited passage supports the particular claim; reference existence alone is insufficient.
+- Keep **application requirements**, **method assumptions**, **evidence status**, and **actual performance** distinct. The requirements matrix states needed properties and their basis. The performance matrix contains an outcome estimate or bound with its protocol and support; an assumption or "not measured" is not performance. No measurement means no data, not a low score. A proxy needs a justified link to the target property. Incompatible quantities or protocols do not establish a ranking.
+- Label consequential claims as **source report**, **inference**, or **untested hypothesis**, with a locator or basis. A report describes what a source says, not an independently verified truth. Check support for the specific claim, population and conditions; reference existence alone is insufficient.
 - Compare the proposed contribution with its closest known neighbors, including older equivalent ideas and negative findings. Not finding a work does not establish novelty. Combining modules or renaming an old mechanism does not establish a contribution. A new application needs a justified, nontrivial difference and validation too.
 - Separate usefulness, novelty, feasibility, and strength of evidence. Make the residual contribution explicit and bounded; do not promise acceptance or a top-tier publication.
-- Prefer a test that separates the favored explanation from a plausible rival. State what to measure, suitable controls, relevant conditions, uncertainty, resource limits, and what outcomes imply continue, adjust, or stop. Search, an analytical check, or a counterexample can be the cheapest next test. A proposal is not an executed experiment.
+- Make consequential hypotheses distinguishable from credible alternatives. The minimal validation is the smallest design sufficient to change the decision, not simply the cheapest activity. Choose controls addressing the claim, not merely remove a component. For empirical work, distinguish assignment, independent sampling and measurement units; align splits and uncertainty with the intended population, time and dependence. Check information timing, confounding and selection where relevant.
 - For proofs, state quantifiers and conditions, track dependencies, distinguish necessary from sufficient conditions, and actively seek counterexamples. Finite examples do not prove a universal theorem.
-- Both positive and negative results constrain the contribution's scope. A null result is neither universal impossibility nor evidence of equivalence without adequate precision and a justified margin.
+- Interpret effect size and uncertainty together with design and measurement validity. A null result is not equivalence or impossibility; equivalence requires a justified margin, adequate precision, and an appropriate procedure. Both positive and negative results restrict scope. Theoretical obligations and qualitative rival interpretations need their own validation; do not impose p-values, train/test splits, or numerical margins on every task.
 
 ## Tools and authority
 

@@ -8,6 +8,8 @@ Start with the target phenomenon or task and the setting in which failure matter
 
 Identify problem attributes: inputs and observability, objective, constraints, perturbations, scale, resources, and relevant outcomes. Separate a stakeholder need or requirement from a benchmark convention and from your own assumption.
 
+Identify what kind of claim the map is intended to enable and its target quantity or interpretation. A method family is defined along a stated mechanism/assumption axis; different objectives, such as prediction and causal identification, cannot be ranked as if they answered the same question. Use the relevant branch of [claim and design](claim-design.md) when selecting a validation.
+
 Use surveys or tutorials to orient terminology, then locate primary work for claims that determine the decision. Retrieve by the phenomenon, mechanism, assumptions, and adjacent terminology. Follow citations backward for origins and forward for corrections or changed conditions. Search and reading may alternate; change queries when the family structure exposes a missing synonym or rival mechanism. Keep the search's date, sources, and boundaries visible. Do not equate citation counts, venue prestige, or repository stars with evidence quality.
 
 ## Classify by explanatory structure
@@ -22,11 +24,13 @@ For each relevant family, identify:
 
 Methods may span families. State the classification axis and permit overlapping membership rather than forcing product names into disjoint buckets. If dates or origins are unknown, leave the timeline incomplete. A citation supplied by one author about another is a lead, not verified criticism until the underlying work is checked.
 
+For example, supervised learning, Bayesian inference, a neural representation and online updating describe different axes and can coexist. Chronological order alone is not evidence of inheritance. In basic research, relevant comparison dimensions may be identifiability, error bounds, assumptions or explanatory scope rather than application demand. Keep not measured, unknown, incompatible and observed failure distinct.
+
 Read in layers: task and claimed outcome; mechanism and assumptions; decisive equations, proof steps, or protocol; evidence and limitations. Deep-read what the current conclusion depends on. Selective reading must not justify certifying an unexamined proof or measurement. An abstract-only source cannot establish details that require full text.
 
 ## Compare two different things
 
-The requirements matrix asks which properties matter in each target application and why. Use thresholds, priorities, and requirement provenance. The performance matrix asks what each method actually achieves under declared conditions, with units, uncertainty, and evidence status. See the forms when a table helps.
+The requirements matrix asks which properties matter in each target application and why. Define each property and its basis; a convenient count is not automatically a valid proxy for the need. The performance matrix asks what each method actually achieves under declared conditions, with an estimate or bound, units, uncertainty and support. Keep method assumptions in the family map and evidence gaps in a status note. An untested assumption is not a performance value. With no measurement, write "no data"; do not fill the cell with a speculative benefit or cost. See the forms when a table helps.
 
 Join the matrices by property and compatible setting to locate a **specific unmet requirement**. Do not join them by an averaged score. Mark missing measurements, unmet requirements, and incomparable evidence differently. A requirement that no assessed method meets is a candidate bottleneck; first check whether the requirement, missing coverage, or comparison itself is flawed.
 

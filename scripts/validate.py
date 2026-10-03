@@ -102,6 +102,22 @@ def validate(root, *, installed=False):
             raise ValueError('Trigger labels must be boolean')
     except (ValueError, OSError, KeyError, TypeError) as exc:
         errors.append(f'evaluation fixtures: {exc}')
+    try:
+        scientific = json.loads((root / 'evals/scientific-cases.json').read_text(encoding='utf-8'))['cases']
+        ids = [case['id'] for case in scientific]
+        if not ids or len(ids) != len(set(ids)):
+            raise ValueError('Scientific cases need unique IDs')
+        for case in scientific:
+            if not re.fullmatch(r'r[0-9]{2}', case['id']) or not case['request'].strip() or not case['materials']:
+                raise ValueError('Invalid scientific raw case')
+            raw = json.loads((root / f"evals/scientific-inputs/{case['id']}.json").read_text(encoding='utf-8'))
+            if raw != case:
+                raise ValueError(f"Aggregate/raw case mismatch: {case['id']}")
+        raw_ids = {path.stem for path in (root / 'evals/scientific-inputs').glob('*.json')}
+        if raw_ids != set(ids):
+            raise ValueError('Scientific aggregate and per-case files must correspond exactly')
+    except (ValueError, OSError, KeyError, TypeError) as exc:
+        errors.append(f'scientific fixture structure: {exc}')
     return errors
 
 

@@ -1,5 +1,7 @@
 # Recorded evaluation
 
+Historical record: answers, preferences and original input hashes below describe the earlier published version, not the scientific revision in v0.3.0. They are retained unchanged. The fixed P/Q order, one context per condition, explicit case cues and reviewer-reported answer-length imbalance limit interpretation. See [the scientific review](SCIENTIFIC-REVIEW.md) for confirmed content defects and the new per-case development run.
+
 Build date: 2026-10-03. Independent behavior runs and masked comparison were executed with native agents; no external provider, retrieval, training, or real research project was used. Model identity was not exposed and was recorded as such.
 
 ## Actual behavior runs

@@ -1,0 +1,280 @@
+{
+  "date": "2026-10-03",
+  "purpose": "Review-informed development regression; not held-out benchmark or effectiveness proof",
+  "source_revision": "isolated unpublished scientific revision; no commit created",
+  "base_release": {
+    "git_commit": "53787e930915922f44200b733e62efa391cd97d9",
+    "zip_sha256": "f6c4725bec4f39c3bc78f16f6e8cabe6caf0b7240f244624ed45aabc17101c44"
+  },
+  "available_execution_facts": {
+    "fresh_context_per_case_and_condition": true,
+    "performers": 12,
+    "comparators": 2,
+    "model_identity": "not exposed",
+    "model_overrides": false,
+    "model_seed_and_sampling_settings": "not exposed",
+    "start_end_timestamps": "not independently retained",
+    "access_boundary": "dispatch instruction and output self-report; not independently audited or sandbox-isolated"
+  },
+  "output_integrity": "Actual answers are neither trimmed nor rewritten. Condition JSON containers aggregate parsed originals; comparator and masked-pair files are byte copies.",
+  "source_sha256": {
+    "SKILL.md": "7a8c45b24e04563d8eb95d2455121140841e5d8e8f3a053dd7d1f4e530388077",
+    "references/claim-design.md": "f0eefdefb1991fbfbc1b9769b2c679f779eb2a441ee58992a23ddac16fe71ff5",
+    "references/evidence-tools.md": "1e1966a2994eadfdbf0d54fd437009766d59ccd5edd1d5700d6f400d930343db",
+    "references/field-map.md": "9197ea79a1ad477c6984e88877f4deb4a3f64fb0a9fce3d2555bbe90441d1872",
+    "references/idea-test.md": "94c4b29635266c08f50ca2b31b2a025896e8300ec3597c916dc54dabdc80f1c6",
+    "references/output-forms.md": "fee40e8bf94626a255f0cf9053358c8371f8926cf46cb78ad636e0bc8aef7d08",
+    "references/result-diagnosis.md": "3643266628be61e3d3c29f35741bba3678912e1a970396e6fa72a772e11859ca",
+    "evals/scientific-inputs/r01.json": "7c1dc3e01ecf8908436dcc17b2cca4af9ef2d430267ec139d25938f6588ca9ed",
+    "evals/scientific-inputs/r02.json": "e8f2ed1593fb776566c7c63ef4d9331df002376ba04c5ba455352b002e17bee1",
+    "evals/scientific-inputs/r03.json": "17856e693c789813b8a36405e559be6dfc135de8daf38e6edb5dba7f4ae357ca",
+    "evals/scientific-inputs/r04.json": "918e781fa8d0bb52cb1eb9f034402f07d26121281201787709f1a7bb20985923",
+    "evals/scientific-inputs/r05.json": "e9dcc5994edf96dac9e30e44aa84cec4de081c10cbad4c6520758d9016b236d1",
+    "evals/scientific-inputs/r06.json": "8d130622ca4fc8192fdc5812288aa555fbb5184d1d1ab808d60ed470943653c6"
+  },
+  "raw_executor_output_sha256": {
+    "with/r01/response.json": "13ba38e930a0c1a76ed7a0df98cb8977f6c2feba08a6dc53620c647408c88441",
+    "with/r02/response.json": "805cf1bb07004028244b225daba5b5f2cc9dbaef87a3bad2a3261a839fd17bec",
+    "with/r03/response.json": "790b4b4e6f52ae2678f479febe5ac43616f97f1a97e5e22886dbca131678ebb5",
+    "with/r04/response.json": "f965d39835d56277d5a04726a9b41cbe1f7ae5f279cf6f359ae9432a261ac636",
+    "with/r05/response.json": "5a93cc25aced48b9950596c7303a6a2949585d4ff8114c1e0f9f8c1a18cda703",
+    "with/r06/response.json": "fcd20f350d45c05d4afdc4dcd5d5b1a83ac59a45d593ae5f98923be31d91b5b4",
+    "without/r01/response.json": "37e92a59ea1f017a322a4db5cbe9ace5262251682eea5a9b7eeb49f1a46a497d",
+    "without/r02/response.json": "3284ca7cea5c3bd43b21ad58aa5144b9cb2b3231b1bcd4617347a7917a1990ba",
+    "without/r03/response.json": "2e15bb119a8e1664be85695c91b6f5af66e6272647fb268fa20cbca6a741a075",
+    "without/r04/response.json": "194e4cedb6438894397d267b61c3b6bf7648d7683f87552cd504b081f8ab914c",
+    "without/r05/response.json": "4b8503fbccb1ccbca7fa70616f0c1e5838c3dcc71e08144fec76bc8fd6f2e994",
+    "without/r06/response.json": "1ebaacc1d5e60380b88c2a71baa5a0d0b5fe746fe2ec88cd1ca552ec3aecdabd"
+  },
+  "packaged_artifact_sha256": {
+    "evals/results/scientific-with.json": "ffbd4fff6970d8819b73822b6004a499db4bcca89d136a924477133c0f19dd05",
+    "evals/results/scientific-without.json": "610e6306eefb2dd5b930e554ceabcc029881bc145240f9ebe66bd04a8552d54b",
+    "evals/results/scientific-comparison-forward.json": "5c3956625ddd3a3c1572c5d6c1462e759a0d28d8d74ffa2989bcf8975e66378a",
+    "evals/results/scientific-comparison-reverse.json": "25d1ea0f08e658153741f43050b37f4dcecc2d1de35c7e761b32939898cfe35f",
+    "evals/results/scientific-pairs-forward.json": "79bce7e476fa48134f1e8618c81538eecf96236478b488f0c28d2a1f7e0fb3db",
+    "evals/results/scientific-pairs-reverse.json": "29ad447d706c641f1e688bfc28d572d6680bd882690ffae119f73176a9dd610c"
+  },
+  "presentation_and_lengths": {
+    "seed_for_pair_placement_only": 20261003,
+    "balanced_placement": true,
+    "mapping": {
+      "forward": {
+        "r01": {
+          "A": "with_skill",
+          "B": "without_skill"
+        },
+        "r02": {
+          "A": "without_skill",
+          "B": "with_skill"
+        },
+        "r03": {
+          "A": "with_skill",
+          "B": "without_skill"
+        },
+        "r04": {
+          "A": "without_skill",
+          "B": "with_skill"
+        },
+        "r05": {
+          "A": "without_skill",
+          "B": "with_skill"
+        },
+        "r06": {
+          "A": "with_skill",
+          "B": "without_skill"
+        }
+      },
+      "reverse": {
+        "r01": {
+          "A": "without_skill",
+          "B": "with_skill"
+        },
+        "r02": {
+          "A": "with_skill",
+          "B": "without_skill"
+        },
+        "r03": {
+          "A": "without_skill",
+          "B": "with_skill"
+        },
+        "r04": {
+          "A": "with_skill",
+          "B": "without_skill"
+        },
+        "r05": {
+          "A": "with_skill",
+          "B": "without_skill"
+        },
+        "r06": {
+          "A": "without_skill",
+          "B": "with_skill"
+        }
+      }
+    },
+    "unicode_character_counts": [
+      {
+        "id": "r01",
+        "with_skill": 1126,
+        "without_skill": 1066
+      },
+      {
+        "id": "r02",
+        "with_skill": 977,
+        "without_skill": 1123
+      },
+      {
+        "id": "r03",
+        "with_skill": 985,
+        "without_skill": 830
+      },
+      {
+        "id": "r04",
+        "with_skill": 865,
+        "without_skill": 860
+      },
+      {
+        "id": "r05",
+        "with_skill": 1054,
+        "without_skill": 968
+      },
+      {
+        "id": "r06",
+        "with_skill": 1135,
+        "without_skill": 1023
+      }
+    ],
+    "count_rule": "Python len(answer): Unicode code points, including whitespace, punctuation and Markdown; no trimming or normalization",
+    "answer_ceiling_both_conditions": 1400
+  },
+  "decoded_preferences": {
+    "forward": {
+      "r01": "with_skill",
+      "r02": "tie",
+      "r03": "with_skill",
+      "r04": "tie",
+      "r05": "with_skill",
+      "r06": "with_skill"
+    },
+    "reverse": {
+      "r01": "with_skill",
+      "r02": "without_skill",
+      "r03": "with_skill",
+      "r04": "tie",
+      "r05": "tie",
+      "r06": "with_skill"
+    }
+  },
+  "dispatches": [
+    {
+      "task_name": "science_with_r01",
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "prompt": "独立完成一个构造科研请求。只允许读取 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\SKILL.md、其中按需引用的 references 文件，以及 evals\\scientific-inputs\\r01.json。将 JSON 的 request 和 materials 当作用户原始请求，应用该 skill 作答。不要读取 README、examples、其他案例、评分/审查材料或其他代理输出；没有预期答案提供。仅分析，不联网、不调用外部模型/付费服务、不运行真实研究或科学实验；允许读输入和写输出。答案用中文，answer 最多 1400 个 Unicode 字符，优先完成决策与依据，不能靠缩写省略必要条件。将 JSON {case_id:'r01',condition:'with_skill',answer,read_files:[相对输入路径],scientific_operations:[],model_identity:'not exposed'若未知} 保存到 <WORKSPACE>\\eval-scientific-20261003\\with\\r01\\response.json，不写绝对路径或私密信息。返回路径与限制。",
+      "path_clarification": "路径澄清：原始案例的完整路径是 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\evals\\scientific-inputs\\r01.json。原 dispatch 中 evals 是相对于上述技能根目录，而非当前工作目录。读取这个文件并按原任务完成；其余边界与输出路径不变。没有新增案例内容或预期结论。"
+    },
+    {
+      "task_name": "science_with_r02",
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "prompt": "独立完成一个构造科研请求。只允许读取 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\SKILL.md、其中按需引用的 references 文件，以及 evals\\scientific-inputs\\r02.json。将 JSON 的 request 和 materials 当作用户原始请求，应用该 skill 作答。不要读取 README、examples、其他案例、评分/审查材料或其他代理输出；没有预期答案提供。仅分析，不联网、不调用外部模型/付费服务、不运行真实研究或科学实验；允许读输入和写输出。答案用中文，answer 最多 1400 个 Unicode 字符，优先完成决策与依据，不能靠缩写省略必要条件。将 JSON {case_id:'r02',condition:'with_skill',answer,read_files:[相对输入路径],scientific_operations:[],model_identity:'not exposed'若未知} 保存到 <WORKSPACE>\\eval-scientific-20261003\\with\\r02\\response.json，不写绝对路径或私密信息。返回路径与限制。",
+      "path_clarification": "路径澄清：原始案例的完整路径是 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\evals\\scientific-inputs\\r02.json。原 dispatch 中 evals 是相对于上述技能根目录，而非当前工作目录。读取这个文件并按原任务完成；其余边界与输出路径不变。没有新增案例内容或预期结论。"
+    },
+    {
+      "task_name": "science_with_r03",
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "prompt": "独立完成一个构造科研请求。只允许读取 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\SKILL.md、其中按需引用的 references 文件，以及 evals\\scientific-inputs\\r03.json。将 JSON 的 request 和 materials 当作用户原始请求，应用该 skill 作答。不要读取 README、examples、其他案例、评分/审查材料或其他代理输出；没有预期答案提供。仅分析，不联网、不调用外部模型/付费服务、不运行真实研究或科学实验；允许读输入和写输出。答案用中文，answer 最多 1400 个 Unicode 字符，优先完成决策与依据，不能靠缩写省略必要条件。将 JSON {case_id:'r03',condition:'with_skill',answer,read_files:[相对输入路径],scientific_operations:[],model_identity:'not exposed'若未知} 保存到 <WORKSPACE>\\eval-scientific-20261003\\with\\r03\\response.json，不写绝对路径或私密信息。返回路径与限制。",
+      "path_clarification": "路径澄清：原始案例的完整路径是 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\evals\\scientific-inputs\\r03.json。原 dispatch 中 evals 是相对于上述技能根目录，而非当前工作目录。读取这个文件并按原任务完成；其余边界与输出路径不变。没有新增案例内容或预期结论。"
+    },
+    {
+      "task_name": "science_with_r04",
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "prompt": "独立完成一个构造科研请求。只允许读取 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\SKILL.md、其中按需引用的 references 文件，以及 完整原始案例路径 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\evals\\scientific-inputs\\r04.json。将 JSON 的 request 和 materials 当作用户原始请求，应用该 skill 作答。不要读取 README、examples、其他案例、评分/审查材料或其他代理输出；没有预期答案提供。仅分析，不联网、不调用外部模型/付费服务、不运行真实研究或科学实验；允许读输入和写输出。答案用中文，answer 最多 1400 个 Unicode 字符，优先完成决策与依据，不能靠缩写省略必要条件。将 JSON {case_id:'r04',condition:'with_skill',answer,read_files:[相对输入路径],scientific_operations:[],model_identity:'not exposed'若未知} 保存到 <WORKSPACE>\\eval-scientific-20261003\\with\\r04\\response.json，不写绝对路径或私密信息。返回路径与限制。"
+    },
+    {
+      "task_name": "science_with_r05",
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "prompt": "独立完成一个构造科研请求。只允许读取 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\SKILL.md、其中按需引用的 references 文件，以及 完整原始案例路径 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\evals\\scientific-inputs\\r05.json。将 JSON 的 request 和 materials 当作用户原始请求，应用该 skill 作答。不要读取 README、examples、其他案例、评分/审查材料或其他代理输出；没有预期答案提供。仅分析，不联网、不调用外部模型/付费服务、不运行真实研究或科学实验；允许读输入和写输出。答案用中文，answer 最多 1400 个 Unicode 字符，优先完成决策与依据，不能靠缩写省略必要条件。将 JSON {case_id:'r05',condition:'with_skill',answer,read_files:[相对输入路径],scientific_operations:[],model_identity:'not exposed'若未知} 保存到 <WORKSPACE>\\eval-scientific-20261003\\with\\r05\\response.json，不写绝对路径或私密信息。返回路径与限制。"
+    },
+    {
+      "task_name": "science_with_r06",
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "prompt": "独立完成一个构造科研请求。只允许读取 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\SKILL.md、其中按需引用的 references 文件，以及 完整原始案例路径 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\evals\\scientific-inputs\\r06.json。将 JSON 的 request 和 materials 当作用户原始请求，应用该 skill 作答。不要读取 README、examples、其他案例、评分/审查材料或其他代理输出；没有预期答案提供。仅分析，不联网、不调用外部模型/付费服务、不运行真实研究或科学实验；允许读输入和写输出。答案用中文，answer 最多 1400 个 Unicode 字符，优先完成决策与依据，不能靠缩写省略必要条件。将 JSON {case_id:'r06',condition:'with_skill',answer,read_files:[相对输入路径],scientific_operations:[],model_identity:'not exposed'若未知} 保存到 <WORKSPACE>\\eval-scientific-20261003\\with\\r06\\response.json，不写绝对路径或私密信息。返回路径与限制。"
+    },
+    {
+      "task_name": "science_without_r01",
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "prompt": "独立完成一个构造科研请求。不加载研究 skill。只允许读取完整原始案例路径 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\evals\\scientific-inputs\\r01.json。将 JSON 的 request 和 materials 当作用户原始请求作答。不要读取任何 SKILL、references、README、examples、其他案例、评分/审查材料或其他代理输出；没有预期答案提供。仅分析，不联网、不调用外部模型/付费服务、不运行真实研究或科学实验；允许读输入和写输出。答案用中文，answer 最多 1400 个 Unicode 字符，优先完成决策与依据，不能靠缩写省略必要条件。将 JSON {case_id:'r01',condition:'without_skill',answer,read_files:[相对输入路径],scientific_operations:[],model_identity:'not exposed'若未知} 保存到 <WORKSPACE>\\eval-scientific-20261003\\without\\r01\\response.json，不写绝对路径或私密信息。返回路径与限制。"
+    },
+    {
+      "task_name": "science_without_r02",
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "prompt": "独立完成一个构造科研请求。不加载研究 skill。只允许读取完整原始案例路径 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\evals\\scientific-inputs\\r02.json。将 JSON 的 request 和 materials 当作用户原始请求作答。不要读取任何 SKILL、references、README、examples、其他案例、评分/审查材料或其他代理输出；没有预期答案提供。仅分析，不联网、不调用外部模型/付费服务、不运行真实研究或科学实验；允许读输入和写输出。答案用中文，answer 最多 1400 个 Unicode 字符，优先完成决策与依据，不能靠缩写省略必要条件。将 JSON {case_id:'r02',condition:'without_skill',answer,read_files:[相对输入路径],scientific_operations:[],model_identity:'not exposed'若未知} 保存到 <WORKSPACE>\\eval-scientific-20261003\\without\\r02\\response.json，不写绝对路径或私密信息。返回路径与限制。"
+    },
+    {
+      "task_name": "science_without_r03",
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "prompt": "独立完成一个构造科研请求。不加载研究 skill。只允许读取完整原始案例路径 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\evals\\scientific-inputs\\r03.json。将 JSON 的 request 和 materials 当作用户原始请求作答。不要读取任何 SKILL、references、README、examples、其他案例、评分/审查材料或其他代理输出；没有预期答案提供。仅分析，不联网、不调用外部模型/付费服务、不运行真实研究或科学实验；允许读输入和写输出。答案用中文，answer 最多 1400 个 Unicode 字符，优先完成决策与依据，不能靠缩写省略必要条件。将 JSON {case_id:'r03',condition:'without_skill',answer,read_files:[相对输入路径],scientific_operations:[],model_identity:'not exposed'若未知} 保存到 <WORKSPACE>\\eval-scientific-20261003\\without\\r03\\response.json，不写绝对路径或私密信息。返回路径与限制。"
+    },
+    {
+      "task_name": "science_without_r04",
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "prompt": "独立完成一个构造科研请求。不加载研究 skill。只允许读取完整原始案例路径 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\evals\\scientific-inputs\\r04.json。将 JSON 的 request 和 materials 当作用户原始请求作答。不要读取任何 SKILL、references、README、examples、其他案例、评分/审查材料或其他代理输出；没有预期答案提供。仅分析，不联网、不调用外部模型/付费服务、不运行真实研究或科学实验；允许读输入和写输出。答案用中文，answer 最多 1400 个 Unicode 字符，优先完成决策与依据，不能靠缩写省略必要条件。将 JSON {case_id:'r04',condition:'without_skill',answer,read_files:[相对输入路径],scientific_operations:[],model_identity:'not exposed'若未知} 保存到 <WORKSPACE>\\eval-scientific-20261003\\without\\r04\\response.json，不写绝对路径或私密信息。返回路径与限制。"
+    },
+    {
+      "task_name": "science_without_r05",
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "prompt": "独立完成一个构造科研请求。不加载研究 skill。只允许读取完整原始案例路径 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\evals\\scientific-inputs\\r05.json。将 JSON 的 request 和 materials 当作用户原始请求作答。不要读取任何 SKILL、references、README、examples、其他案例、评分/审查材料或其他代理输出；没有预期答案提供。仅分析，不联网、不调用外部模型/付费服务、不运行真实研究或科学实验；允许读输入和写输出。答案用中文，answer 最多 1400 个 Unicode 字符，优先完成决策与依据，不能靠缩写省略必要条件。将 JSON {case_id:'r05',condition:'without_skill',answer,read_files:[相对输入路径],scientific_operations:[],model_identity:'not exposed'若未知} 保存到 <WORKSPACE>\\eval-scientific-20261003\\without\\r05\\response.json，不写绝对路径或私密信息。返回路径与限制。"
+    },
+    {
+      "task_name": "science_without_r06",
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "prompt": "独立完成一个构造科研请求。不加载研究 skill。只允许读取完整原始案例路径 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\evals\\scientific-inputs\\r06.json。将 JSON 的 request 和 materials 当作用户原始请求作答。不要读取任何 SKILL、references、README、examples、其他案例、评分/审查材料或其他代理输出；没有预期答案提供。仅分析，不联网、不调用外部模型/付费服务、不运行真实研究或科学实验；允许读输入和写输出。答案用中文，answer 最多 1400 个 Unicode 字符，优先完成决策与依据，不能靠缩写省略必要条件。将 JSON {case_id:'r06',condition:'without_skill',answer,read_files:[相对输入路径],scientific_operations:[],model_identity:'not exposed'若未知} 保存到 <WORKSPACE>\\eval-scientific-20261003\\without\\r06\\response.json，不写绝对路径或私密信息。返回路径与限制。"
+    },
+    {
+      "task_name": "science_compare_forward",
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "prompt": "作为独立比较者，评阅六个构造科研请求的实际成对回答。只允许读取 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\evals\\scientific-cases.json 和 <WORKSPACE>\\eval-scientific-20261003\\comparison\\forward-pairs.json。A/B 是未标记的实际答案，不提供条件映射、作者预期结论或评分答案。不要读取 skill、references、examples、README、审查文档、其他输出、其他比较结果或历史。按原始请求判断科学正确性、主张与证据的匹配、可改变判断的下一步设计、约束遵守与表达用途；理由必须指出具体答案内容。不要因长度本身偏好，也不必强行选胜者。每题给 {id,preferred:'A'|'B'|'tie',reason,scientific_concerns,missing_info}，保留两边存在的问题。仅分析，不联网、不调用外部模型/付费服务、不运行科学实验。允许读这两个文件并写 JSON {model_identity:'not exposed'若未知,read_files:['scientific-cases.json','forward-pairs.json'],cases:[...],overall,scientific_operations:[]} 到 <WORKSPACE>\\eval-scientific-20261003\\comparison\\forward-response.json。不写绝对路径或私密信息。返回路径与限制。"
+    },
+    {
+      "task_name": "science_compare_reverse",
+      "fork_turns": "none",
+      "model_override": null,
+      "reasoning_override": null,
+      "prompt": "作为独立比较者，评阅六个构造科研请求的实际成对回答。只允许读取 <WORKSPACE>\\revisions\\scientific-review-20261003\\research-methodology\\evals\\scientific-cases.json 和 <WORKSPACE>\\eval-scientific-20261003\\comparison\\reverse-pairs.json。A/B 是未标记的实际答案，不提供条件映射、作者预期结论或评分答案。不要读取 skill、references、examples、README、审查文档、其他输出、其他比较结果或历史。按原始请求判断科学正确性、主张与证据的匹配、可改变判断的下一步设计、约束遵守与表达用途；理由必须指出具体答案内容。不要因长度本身偏好，也不必强行选胜者。每题给 {id,preferred:'A'|'B'|'tie',reason,scientific_concerns,missing_info}，保留两边存在的问题。仅分析，不联网、不调用外部模型/付费服务、不运行科学实验。允许读这两个文件并写 JSON {model_identity:'not exposed'若未知,read_files:['scientific-cases.json','reverse-pairs.json'],cases:[...],overall,scientific_operations:[]} 到 <WORKSPACE>\\eval-scientific-20261003\\comparison\\reverse-response.json。不写绝对路径或私密信息。返回路径与限制。"
+    }
+  ],
+  "operational_failure": "With-skill r01/r02/r03 initially interpreted a relative case path against CWD and could not find it; the full path was clarified without additional scientific content. Other dispatches initially used the full path.",
+  "limits": [
+    "Cases authored from review are development tests, not unseen hold-outs.",
+    "Same ceiling is not exact length matching.",
+    "Condition mask is an instruction boundary; answer style can reveal condition.",
+    "Reversal uses another comparator; disagreement cannot isolate order bias from evaluator variability.",
+    "Shared model family and executor are not independent training/infrastructure.",
+    "No repeated model seeds, cross-model replication or real-project outcome validation.",
+    "Scientific-operation fields are empty self-reports; file reads/writes are evaluation operations, not scientific experiments."
+  ]
+}

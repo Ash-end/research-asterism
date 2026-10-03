@@ -6,6 +6,8 @@ Use for a proposed mechanism, a contribution claim, prioritization, or joint ide
 
 Translate the proposal into a question: in a stated setting, does a defined change improve or explain a meaningful outcome relative to a relevant alternative, and under which conditions? Identify the evidence for the need and for the proposed causal or logical connection. If the user starts with a solution, seek a real failure it could address. If they start with a failure, inspect competing explanations before selecting a technique.
 
+Determine whether the intended claim concerns a description, prediction, causal effect, measurement or theory, including mixed or qualitative interpretations. Define its target and conditions using the relevant [design branch](claim-design.md). Do not treat a predictive improvement as identification of a causal mechanism or a repeatable proxy as measurement validity.
+
 For collaborative ideation, derive candidates from a demonstrated limitation, a changed condition, a useful boundary, an analogy whose assumptions transfer, or an unexplained observation. Explain the evidential starting point and the speculative step. Vary the mechanism or question, not only module names. The amount of divergence should fit the decision and available evidence; do not force a candidate count.
 
 ## Compare the nearest neighbors
@@ -23,6 +25,7 @@ State the favored hypothesis and a credible rival with predictions that differ. 
 Specify, as applicable:
 
 - Intervention or variable, baseline, matched data and information access, tuning or resource budget.
+- Assignment, independent sampling and measurement units where relevant; validation populations/times and how repeated or nested observations are handled.
 - What the outcome measures; an operationally meaningful threshold or justified equivalence margin.
 - A negative control, boundary case, or ablation that distinguishes mechanism from artifact.
 - Uncertainty assessment and whether available repetitions or observations can resolve the relevant effect.
@@ -34,3 +37,5 @@ If a proposed numerical cutoff has no stakeholder or scientific basis, label it 
 ## Close the decision
 
 Recommend the next check, its expected information gain, and the consequence of each informative outcome. If evidence is too weak, choose a source check or feasibility probe before expensive implementation. If overlap with prior work is strong, narrow or redirect the contribution rather than inventing novelty. A failed candidate may still reveal a useful boundary, but that boundary also requires evidence and nearest-neighbor checking.
+
+Reject a cheap check that would return the same prediction under all consequential explanations. Seek the smallest sufficient design or analytical argument. Define whether a resource comparison fixes the budget or fixes the target quality; do not silently switch between them. A low fitting error does not establish parameter identifiability or mechanism validity.

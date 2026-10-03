@@ -23,7 +23,7 @@ Use a DOI or official URL when verified, or an exact supplied artifact and locat
 
 Use three labels in consequential judgments:
 
-- **Source fact:** what the inspected material reports or what the inspected artifact shows, with scope.
+- **Source report:** what the inspected material reports or the artifact shows, with its population, conditions and inspected scope; not automatic verification of the report.
 - **Inference:** your conclusion from stated evidence and assumptions, including alternatives.
 - **Untested hypothesis:** a proposed explanation or prediction requiring new evidence.
 

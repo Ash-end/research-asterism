@@ -1,36 +1,25 @@
-# Synthetic input/output examples
+# Methodological design examples
 
-All settings, data, and source labels below are invented for teaching. They are not published findings. These compact outputs illustrate the intended form, not evaluated model outputs.
+These are constructed research-design scenarios, not papers, datasets or experimental results. No experiment was run and no performance values are supplied. They illustrate output structure, not scientific validity or skill effectiveness.
 
-## 1 · Field and method map
+## Literature analysis and method comparison: distribution shift
 
-**Input:** “For a toy corridor lighting controller, fixed schedules assume stable daylight; a sensor threshold chatters under noise; two thresholds preserve state. The corridor needs few accidental switch-offs and low maintenance. Help choose a research question.”
+Object: probability prediction in a target setting not represented by the development setting. Question: under what change in the joint input/outcome distribution can an existing estimator remain calibrated? The target quantity is calibration error under the target population; discrimination is a separate outcome.
 
-**Illustrative output:** First test whether state preservation reduces switching without increasing accidental switch-offs under the corridor's noise and delay conditions. This is a bounded controller-fit question; the supplied descriptions do not establish novelty.
+Requirements: specify the target population, decision-time inputs and loss, plus any operational constraints. Method assumptions: reweighting addresses a change in the input distribution only under suitable support and outcome-mechanism conditions; representation invariance needs a justified stable relation; target adaptation needs declared access to target information. These are mechanism/assumption descriptions, not measured performance or an exhaustive literature classification.
 
-| Application requirement | Priority/basis |
-| --- | --- |
-| Avoid accidental switch-offs | Essential in the supplied toy scenario |
-| Low maintenance | Important; operational definition still needed |
+Evidence state: no papers or data supplied. Performance: no data for every family. A useful next step is to define the deployment shift and compatible validation population, then inspect primary work for the specific assumptions. A historical or novelty claim remains unverified until retrieval and reading support it.
 
-| Method capability | Evidence and conditions |
-| --- | --- |
-| Fixed schedule | Simple computation; supplied description; daylight stability assumed |
-| Sensor threshold | Potential noise-induced switching; supplied description, no measurements |
-| Two thresholds | Intended state preservation; effect under target noise remains untested |
+## Hypothesis and validation: incomparable results
 
-Group these by time schedule and measurement feedback; the dual threshold changes feedback behavior. A small synthetic noise sweep with matched inputs can measure switching and accidental switch-offs. Continue if both target needs are met; adjust the thresholds if switching falls at the expense of unacceptable switch-offs. Define the unacceptable rate before the test.
+Object: comparing two predictors for target-population probability estimation. One hypothetical report discusses internal discrimination; another discusses calibration in an external population. These do not estimate the same quantity and cannot establish an advantage by ranking their reported summaries.
 
-## 2 · Idea assessment
+Candidate question: does the proposed calibration step reduce a predeclared target-population calibration error relative to a fitted baseline under the same information and resources? Rival: any apparent difference is attributable to the evaluation population or selection procedure. Define the prediction time, independent units, population, comparator and development/assessment roles before measuring. Performance cells remain no data. The design has not been run.
 
-**Input:** “My new library helper combines retrieval and ranking. An older synthetic note already describes retrieving candidates and ranking them. Is my combination a contribution?”
+## Result interpretation: an imprecise negative observation
 
-**Illustrative output:** The combination's mechanism overlaps with the supplied predecessor. A contribution remains possible if a justified new constraint or a nontrivial improvement survives comparison. First specify the library need, the closest baseline, and the changed assumption.
+Object: whether a modification changes a material property by a scientifically meaningful amount. In this hypothetical scenario, the investigator describes unstable differences among repeated readings but supplies no numerical estimate, independent replication structure or measurement validation.
 
-A candidate hypothesis is that a lightweight location constraint reduces fruitless shelf visits; a rival is that any gain comes solely from a better catalog. Compare the same catalog with and without the location constraint and with an equally informed simple baseline. Measure shelf visits and successful finds, not only ranking accuracy. This is a proposed synthetic test, not an executed study. Stop the claimed new-mechanism framing if the predecessor already establishes it; retain a bounded adaptation if useful and supported.
+The current judgment is incomplete evidence, not equivalence or impossibility. Separate independent preparation units from repeated readings; evaluate an appropriate reference, blocking and matched comparator. A meaningful margin belongs to the target property, not merely the instrument's repeatability. If a valid design later estimates an effect precisely enough relative to justified bounds, it may warrant stopping this formulation or conditional equivalence; otherwise the protocol or question may need revision. No such outcome is claimed here.
 
-## 3 · Result diagnosis
-
-**Input:** “A toy predictor got accuracy 92% on dataset A; another got F1 0.89 on dataset B. Should I call the first better?”
-
-**Illustrative output:** These observations do not support that ranking: the metric and dataset differ. Source facts are the two reported values; the comparative inference is unsupported. Next evaluate matched inputs, information access, tuning budget, and the target metric. Keep uncertainty and test-set provenance. A positive matched result would support the tested comparison, not general superiority; an inconclusive result should trigger a sensitivity or measurement check before scaling.
+Theory and qualitative work instead need proof obligations/counterexamples or traceable interpretations/contrasting cases. They do not require copying a prediction benchmark protocol.

@@ -1,37 +1,33 @@
 # Research Asterism · 研究星群
 
-把兴趣、论文、想法或实验结果转成有意义、可检验的研究问题与下一步决策。品牌是 Research Asterism，实际 skill 标识和调用保持 `$research-methodology`。
+把主题、论文、想法或结果转成有边界的研究问题和下一步判断。实际 skill 标识为 `$research-methodology`。
 
-[English](README.md) · [交互展示](site/index.html) · [合成样例](examples/synthetic-examples.md) · [来源与许可](SOURCES.md) · [评估说明](evals/PROTOCOL.md)
+[English](README.md) · [展示页](site/index.html) · [构造示例](examples/synthetic-examples.md) · [来源与权利](SOURCES.md) · [科学修订记录](evals/SCIENTIFIC-REVIEW.md)
 
-[GitHub 仓库](https://github.com/Ash-end/research-asterism) · [在线展示](https://ash-end.github.io/research-asterism/)
+**版本 0.3.0 · 发布日期 2026-10-03。** [GitHub 仓库](https://github.com/Ash-end/research-asterism) · [公开展示页](https://ash-end.github.io/research-asterism/)。科学修订保留真实评估记录、分歧及局限。
 
 ## 怎么用
 
-只给一个主题也可以：
-
 ```text
-使用 $research-methodology。我想让图书馆找书更省力。
-请先给一个可操作判断，再帮我收敛成小问题，设计最低成本的区分验证。
+使用 $research-methodology。我想研究预测器迁移到新群体后的概率校准。
+请先界定主张和现有证据，再提出能够改变判断的下一步。
 ```
 
-也可给论文、初步想法、实验观察或已有项目记录，再说明当前要作什么决定。知道的预算、数据边界、目标场景一起提供；无需先填长表。
+只有主题也可以。也可提供论文、设计、观察或已有项目笔记；知道当前决策、数据边界与资源约束时一并说明，不必先补齐长材料。
 
-三种模式可组合使用：
-
-| 模式 | 解决什么问题 |
+| 模式 | 解决的决策 |
 | --- | --- |
-| 领域与方法地图 | 按机制、假设和时间演进理解方法，区分应用需求与性能证据 |
-| 想法评估与最小验证 | 比较最近邻，识别真正剩余的贡献，用小验证区分竞争解释 |
-| 结果诊断与下一步 | 判断结果是否可比较，解释正负结果或反例，决定继续、调整或停止 |
+| 领域与方法地图 | 比较机制、假设和演进；分开需求、证据状态与实测性能 |
+| 想法评估与最小验证 | 比较最近邻和剩余贡献；提出区分解释的验证设计，并核查其能否回答问题 |
+| 结果诊断与下一步 | 核查可比性、竞争解释、不确定性和继续／调整／停止条件 |
 
-支持导师提问，也支持共同提出想法。先给判断，再按需给问题卡、两张矩阵、假设、最小实验和决策记录。沿用已有文档，不强制建立另一套记录系统。
+展示页把重加权、稳定表示和目标域适配标为“策略/机制”：这些策略可以组合，不构成互斥分类。“验证设计”提出待实施的核查，不保证其充分性。
+
+支持导师提问与共同提出想法。先给可操作判断，再按需用问题卡、矩阵、假设或决策记录；复用现有文档。描述、预测、因果、测量、理论主张分别选择适合的证据与设计；定性研究和工程验证保留各自标准，不强制套统计实验。
 
 ## 本机调用
 
-先执行 `git clone https://github.com/Ash-end/research-asterism.git`，或下载 ZIP。克隆目录叫 research-asterism；发布 ZIP 的内部目录仍叫 research-methodology。
-
-Codex 项目级安装目标为 `.agents/skills/research-methodology/`。下面的模板复制发布清单中的全部文件（含 references 和 agents），排除 .git 和清单外材料；请在目标项目目录执行，并替换源码路径。**仓库名与安装目录名不同。**
+可以直接要求：“读取这个发布目录的 SKILL.md，并用于我的研究决策。”正式安装到 Codex 项目时，目标目录为 `.agents/skills/research-methodology/`；源目录可以叫 research-asterism 或其他名称，技能名与安装目录保持一致。在目标项目执行下列模板并替换源路径：
 
 ```powershell
 $source = 'C:\path\to\research-asterism'
@@ -45,15 +41,11 @@ foreach ($file in $files) {
 }
 ```
 
-安装后在该项目开新会话，调用 `$research-methodology`。其他宿主应使用其实际配置的发现路径。
+已有目标会停止，避免覆盖。仅复制发布清单，排除 `.git` 和未列文件。安装后在目标项目新开会话刷新发现；其他宿主使用其配置的搜索路径。安装与直接读取是不同操作；调用名和安装目录始终为 research-methodology。
 
-不安装也可立即使用：“读取这个目录的 `SKILL.md`，按其中要求分析我的研究决策。”展示站安装区有 Windows 命令模板；替换源目录，目标已存在时停止，避免覆盖版本。
+## 验证与预览
 
-发布包不含本机发现联接，也无需替换用户现有总技能集。
-
-## 验证与展示站
-
-Python 3.10 以上，仅使用标准库：
+Python 3.10 以上，只用标准库：
 
 ```console
 python scripts/validate.py .
@@ -62,14 +54,12 @@ python scripts/package_release.py . --output /absolute/path/research-methodology
 python -m http.server 8000 --bind 127.0.0.1
 ```
 
-浏览器打开 `http://127.0.0.1:8000/site/`。若本机只有 `py` 或指定解释器路径，请替换 `python`。网站无构建依赖、无外部网络请求，带三模式交互样例、安装及文档入口、响应式布局、键盘导航和减少动效适配。
+打开 `http://127.0.0.1:8000/site/`。网页没有构建依赖和外部资源请求。已安装副本可加 `--installed` 检查目录名。
 
-结构检查不证明科研新颖性或结论正确。行为评估需明确运行独立代理，脚本不会自动调用模型、训练或付费服务。实际结果与未测事项见 [评估记录](evals/RESULTS.md)。
+结构校验与浏览器测试不证明科研结论、新颖性或技能效果。脚本不自动调用模型。旧答案及偏好保留在 [旧评估记录](evals/RESULTS.md)，并标明混杂因素；新运行见 [科学修订记录](evals/SCIENTIFIC-REVIEW.md)。审查启发的案例属于开发回归，不能称为严格留出盲测，偏好数量也不是普遍有效性证明。
 
 ## 使用边界与贡献
 
-源码校验允许 GitHub 解压目录名 `research-asterism-main` 或自定义克隆目录名。安装完整目录后，执行 `python scripts/validate.py /absolute/path/.agents/skills/research-methodology --installed`，会额外检查安装目录名与技能名一致。
+能核实什么取决于当次工具和授权。没有检索时可分析材料，但证据范围与新颖性未核实。引用存在不等于支撑结论，未找到不等于新颖，模块组合不等于贡献。不承诺顶会，不自动跑旧研究、训练、上传数据或付费服务。
 
-能验证到什么程度取决于当次可用检索、阅读和实验工具。没有检索时仍可分析已有材料，但会明确新颖性与证据覆盖未核实。引用存在不等于支撑结论，未检索到不等于新颖，模块组合不等于贡献。不承诺顶会，不因安装或调用 skill 自动启动旧实验、上传数据或调用付费服务。
-
-贡献时优先用合成案例证明行为改善，保持主入口精简。MIT 仅覆盖本包原创内容；手册原件、逐字全文、上游技能及用户项目历史不在发布包内。
+保持短入口和按需参考，用合成案例检验失败，保存真实运行及负结果。MIT 只覆盖本包原创内容；手册 PDF、全文、图、私密项目历史均不进入发布候选，署名不表示来源作者参与或背书。

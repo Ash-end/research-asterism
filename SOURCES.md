@@ -14,7 +14,7 @@ The inspected 14-page local PDF uses condensed, numbered summary sections, mixed
 
 General inspiration carried forward in original language: reason from the problem's important attributes and application needs; study method families and their evolution; understand assumptions and limits; alternate reading with retrieval; compare needs against capabilities; check proof conditions and logical dependencies.
 
-New design in this package: three adaptive decision modes, explicit fact/inference/hypothesis labels, tool capability detection, nearest-neighbor and novelty calibration, minimal rival-discriminating validation, null-result interpretation, optional output forms that reuse project records, synthetic behavior evaluation, and an original accessible showcase. Fixed paper counts, publication quotas, degree schedules, categorical shortcuts about proofs, and assurances of publication were not adopted.
+New design in this package: three adaptive decision modes, explicit source-report/inference/hypothesis labels, tool capability detection, nearest-neighbor and novelty calibration, minimal rival-discriminating validation, null-result interpretation, optional output forms that reuse project records, synthetic behavior evaluation, and an original accessible showcase. Fixed paper counts, publication quotas, degree schedules, categorical shortcuts about proofs, and assurances of publication were not adopted.
 
 No redistribution permission or open license for the handbook has been verified. Attribution does not grant permission. The handbook PDF, extracted text, diagrams, local identifiers, and private source locations are excluded from the release. MIT does not apply to the source handbook.
 
@@ -29,9 +29,25 @@ No redistribution permission or open license for the handbook has been verified.
 
 These URLs refer to mutable upstream branches; the review date is not a pinned snapshot. No star counts are used to validate methodology. Upstream license observations describe the inspected files and are not a legal opinion about unrelated contents.
 
-## Website inspiration
+## Scientific revision: supporting sources and limits
 
-[MotionSites](https://motionsites.ai/) and its [installation page](https://motionsites.ai/mcp) were visual references for restrained dark editorial typography, whitespace, rounded selectors, and clear copyable setup. This site's layout, code, research relation diagram, and synthetic examples are original. No template, logo, screenshot, video, external font, or remote asset is included. No affiliation or endorsement is implied.
+Checked 2026-10-03 as primary-source support for selected design cautions. These references support the specified points; they do not validate this skill or every instruction. Original explanations are used, with no copied implementation or extended quotation.
+
+| Source inspected | Supported scope and limit |
+| --- | --- |
+| [ASA summary of the p-value statement](https://www.amstat.org/asa/files/pdfs/P-ValueStatement.pdf) | A p-value is not an effect-size measure or a sufficient decision rule. The inspected three-page summary is not the full journal statement. It does not by itself specify equivalence margins. |
+| [scikit-learn cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html) and [common pitfalls](https://scikit-learn.org/stable/common_pitfalls.html) | Prediction validation for grouped/time-dependent data and keeping learned preprocessing within training. These software docs do not identify causal effects or prescribe all scientific designs. |
+| [NIST experimental design](https://www.itl.nist.gov/div898/handbook/pri/section3/pri3.htm), [randomized blocks](https://www.itl.nist.gov/div898/handbook/pri/section3/pri332.htm) | Controls, randomization and blocking for experiments where applicable; not universal requirements for theory or qualitative research. |
+| [NIST TN 1297](https://www.nist.gov/pml/nist-technical-note-1297), [uncertainty components](https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-2-classification-components-uncertainty) | Measurement uncertainty and its components. This does not establish construct validity or an application-specific meaningful-effect margin. |
+| [Lazic et al., What exactly is ‘N’ in cell culture and animal experiments?](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2005282) | Experimental versus observational units and pseudoreplication in biological research; inspected abstract/introduction. Survey percentages are not generalized across fields. |
+| [Cawley and Talbot, 2010](https://jmlr.org/papers/v11/cawley10a.html) | Model-selection overfitting can affect performance evaluation. The landing-page abstract was inspected, not a full-paper derivation. |
+| [Miguel Hernán's Harvard profile](https://hsph.harvard.edu/profile/miguel-hernan/) | Well-defined causal questions and explicit observational assumptions. A historical book URL redirected here; the full Causal Inference book was not inspected for this revision. |
+
+The theory and qualitative branches are original methodological guidance. They are not presented as validated by the software/statistical sources above. A mathematical proof, qualitative interpretation, metrological validity and predictive score each require support appropriate to their claim.
+
+## Website design history
+
+The earlier published page used [MotionSites](https://motionsites.ai/) and its [installation page](https://motionsites.ai/mcp) as visual references. That historical attribution is retained. The scientific revision in v0.3.0 replaces it with an original light research-documentation layout, constructed scientific scenarios and distinct assumption/requirement/performance/evidence displays. No upstream template, logo, screenshot, font or remote asset is bundled. No affiliation or endorsement is implied.
 
 ## License scope
 

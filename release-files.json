@@ -35,6 +35,26 @@
     "site/docs.html",
     "site/styles.css",
     "site/app.js",
-    "site/icon.svg"
+    "site/icon.svg",
+    "references/claim-design.md",
+    "evals/SCIENTIFIC-REVIEW.md",
+    "evals/scientific-cases.json",
+    "evals/scientific-inputs/r01.json",
+    "evals/scientific-inputs/r02.json",
+    "evals/scientific-inputs/r03.json",
+    "evals/scientific-inputs/r04.json",
+    "evals/scientific-inputs/r05.json",
+    "evals/scientific-inputs/r06.json",
+    "evals/results/scientific-with.json",
+    "evals/results/scientific-without.json",
+    "evals/results/scientific-comparison-forward.json",
+    "evals/results/scientific-comparison-reverse.json",
+    "evals/results/scientific-pairs-forward.json",
+    "evals/results/scientific-pairs-reverse.json",
+    "evals/results/scientific-run.json",
+    "evals/SCIENTIFIC-RUN.md",
+    "tests/site-check.cjs",
+    "evals/results/scientific-site-check.json",
+    "release.json"
   ]
 }
