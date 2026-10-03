@@ -1,0 +1,22 @@
+name: Reproducible issue
+description: Report a packaging, website or reasoning problem with safe materials.
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version and host
+      description: Repository version and the host used; no credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Synthetic or public reproduction
+      description: Input, observed behavior and what should change. Do not paste restricted materials or personal data.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and scope
+      description: Sources, relevant assumptions and actual checks; separate guesses from completed operations.

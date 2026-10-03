@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, cite this repository and the version used."
+type: software
+title: "Research Asterism: Research Methodology Agent Skill"
+authors:
+  - name: "Ash-end"
+    website: "https://github.com/Ash-end"
+version: 0.4.0
+date-released: 2026-10-03
+url: "https://github.com/Ash-end/research-asterism"
+repository-code: "https://github.com/Ash-end/research-asterism"
+license: MIT
+abstract: "An original, portable skill for research question framing, method comparison, assumption-led ideation and evidence-based next-step decisions."

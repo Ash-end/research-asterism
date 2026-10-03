@@ -1,25 +1,11 @@
-# Publication scope and maintenance
+# Publication boundaries
 
-Release v0.3.0, dated 2026-10-03, is published with explicit user authorization to the existing Ash-end/research-asterism repository and its GitHub Pages site. Publish only the allowlist. Private review/audit bundles remain outside it. Publication metadata is separate from the preserved scientific evaluation inputs and outputs.
+Publish this dedicated skill repository only. `release-files.json` lists the complete public package; `runtime_files` is the minimal installation subset. Do not export a parent skills collection, source PDF, transcription, source figures, private identifiers, research histories, credentials or machine-specific configuration.
 
-Research Asterism is published in [Ash-end/research-asterism](https://github.com/Ash-end/research-asterism). The live showcase is [GitHub Pages](https://ash-end.github.io/research-asterism/). Its stable skill identifier and install directory are research-methodology.
+MIT covers original authorized content, not cited sources. The original guide preserves inspiration without reproducing protected expression. Upstream design review does not import their license scope or imply endorsement.
 
-Publish only this package's explicit [release manifest](release-files.json). A dedicated repository uses the package contents at its root; the ZIP retains a research-methodology/ prefix for installation compatibility. Never commit the enclosing skills collection or machine-specific discovery junction.
+Before publishing, validate the source, run applicable regressions, inspect a clean diff, verify historical artifact fingerprints against their original snapshot, and package the allowlist. Record actual model and browser runs separately. Preserve existing target content; do not force-push.
 
-Included: original skill, progressive references, UI metadata, bilingual guides, synthetic examples and raw evaluation cases, deterministic scripts/tests, recorded synthetic evaluation output, source/license notes, and the original static showcase. The `.nojekyll` marker preserves the plain static files on branch-based GitHub Pages.
+The Pages website uses root `index.html` to redirect into `site/`. Ordinary About description, homepage and topics can be maintained with the repository owner’s authorization. Security/access settings are separate. Social-preview assets are included; their presence does not assert that GitHub's custom social-image setting has been configured.
 
-Excluded by construction: source handbook PDF/transcription/figures, user research, project histories, recovery materials, installed collections, credentials, Git internals, evaluation scratch files, browser profiles, and QA screenshots. The allowlist is reviewed scope, not an automatic secrets/copyright detector. MIT covers original package content only; source authors are not collaborators or endorsers by virtue of attribution.
-
-## Build and verify
-
-Run `python scripts/validate.py .` and `python -m unittest discover -s tests -v`, then build with `python scripts/package_release.py . --output /absolute/path/research-asterism.zip`. The builder rejects unsafe paths, symbolic links, an output inside the source, and overwriting an existing ZIP. Inspect entry names, CRC, and the SHA-256 manifest.
-
-Source directory names may be research-asterism, research-asterism-main, or a custom checkout. Installed content must be placed in research-methodology; use `--installed` to check that directory name. Keep SKILL.md's name and agent invocation stable unless a separately reviewed compatibility change is intended.
-
-CI validates the dedicated repository root with read-only contents permission and checkout credentials not persisted. Check the CI result for the exact pushed commit. Reasoning changes warrant a new real behavior evaluation; branding changes do not warrant invented or silently relabelled results. Preserve original evidence and limits.
-
-## GitHub Pages
-
-The approved public repository serves the complete main-branch root using GitHub Pages. The relative root redirect reaches site/ and all ../ documentation links stay within the project subpath. No build dependency, remote asset, private server, new paid service, or custom domain is required. Do not deploy site/ alone with its relative documentation links unchanged.
-
-After a change, verify the exact remote commit, that commit's CI result, Pages build, the HTTPS root redirect, responsive layouts, copy commands, and linked documentation. Repository existence, a requested build, or a queued workflow alone does not establish successful deployment. Modify only this repository's Pages configuration.
+Release notes should identify the behavior change and the lack of a new independent effectiveness benchmark. Create a versioned release only for an actual published commit; do not use invented DOI, scientific citation counts or endorsements.

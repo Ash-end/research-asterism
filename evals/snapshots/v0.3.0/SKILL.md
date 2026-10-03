@@ -22,8 +22,6 @@ Choose or combine the relevant mode, reading its reference before substantive wo
 
 For study design or claim validation, read the relevant branch of [Claim and design](references/claim-design.md): descriptive, predictive, causal, measurement, or theoretical claims require different evidence. Mixed and qualitative work need an explicit interpretation, not a forced statistical experiment. For retrieval or source support, use [Evidence and capabilities](references/evidence-tools.md). Use [Output forms](references/output-forms.md) only where helpful; no new mandatory record system is required.
 
-For assumption-led ideation, cross-field transfer, or a result whose mechanism is unclear, read [First-principles reasoning](references/first-principles.md). Use it to expose assumptions and competing explanations, alongside literature and claim-specific validation; it is not evidence of novelty or truth.
-
 ## Shared reasoning spine
 
 Connect **scientific question or application goal → method mechanisms and assumptions → a specific unresolved limit → evidence-grounded hypotheses → sufficient discriminating validation**. Basic theory and measurement work do not need a prior user demand. Loop retrieval and reading when evidence changes the question; do not demand fixed counts of papers, ideas, questions, or agents.

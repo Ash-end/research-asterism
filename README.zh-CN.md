@@ -1,65 +1,91 @@
-# Research Asterism · 研究星群
+![Research Asterism: frame questions, examine assumptions, choose an informative test](assets/banner.svg)
 
-把主题、论文、想法或结果转成有边界的研究问题和下一步判断。实际 skill 标识为 `$research-methodology`。
+[![Validate package](https://github.com/Ash-end/research-asterism/actions/workflows/validate.yml/badge.svg)](https://github.com/Ash-end/research-asterism/actions/workflows/validate.yml) [![MIT](assets/license.svg)](LICENSE) [![Version 0.4.0](assets/version.svg)](https://github.com/Ash-end/research-asterism/releases/tag/v0.4.0)
 
-[English](README.md) · [展示页](site/index.html) · [构造示例](examples/synthetic-examples.md) · [来源与权利](SOURCES.md) · [科学修订记录](evals/SCIENTIFIC-REVIEW.md)
+# Research Asterism · 科研判断技能
 
-**版本 0.3.0 · 发布日期 2026-10-03。** [GitHub 仓库](https://github.com/Ash-end/research-asterism) · [公开展示页](https://ash-end.github.io/research-asterism/)。科学修订保留真实评估记录、分歧及局限。
+把主题、论文、想法、证明或结果，转成**有意义、可检验的研究问题和下一步决策**。输出先给当前判断，再说明依据、范围和哪项证据能够改变它。
 
-## 怎么用
+[English](README.md) · [网站](https://ash-end.github.io/research-asterism/) · [安装](docs/GETTING-STARTED.md) · [原创指南](docs/HANDBOOK.md) · [评估](docs/EVALUATION.md) · [来源](SOURCES.md)
 
-```text
-使用 $research-methodology。我想研究预测器迁移到新群体后的概率校准。
-请先界定主张和现有证据，再提出能够改变判断的下一步。
+## 从什么材料开始
+
+| 当前材料 | 要解决的决策 | 可选交付 |
+| --- | --- | --- |
+| 只有主题，或已有阅读材料 | 该理解什么、接下来读什么？ | 问题卡、方法家族与阅读路线 |
+| 想法、机制或贡献主张 | 值不值得做，最先验证什么？ | 假设、最近邻差异、竞争预测与最小验证 |
+| 阳性、阴性或矛盾结果 | 结果支持什么，下一步是什么？ | 有效性核查、竞争解释与继续/调整/停止条件 |
+| 证明或定性解释 | 哪项条件或解释需要检查？ | 逻辑依赖、反例或材料支持的竞争叙述 |
+
+不要求先凑齐论文、候选或实验。沿用已有项目记录，按决策选择表格和问题卡，不铺设另一套强制文档体系。
+
+## 三分钟开始
+
+```sh
+git clone https://github.com/Ash-end/research-asterism.git
 ```
 
-只有主题也可以。也可提供论文、设计、观察或已有项目笔记；知道当前决策、数据边界与资源约束时一并说明，不必先补齐长材料。
-
-| 模式 | 解决的决策 |
-| --- | --- |
-| 领域与方法地图 | 比较机制、假设和演进；分开需求、证据状态与实测性能 |
-| 想法评估与最小验证 | 比较最近邻和剩余贡献；提出区分解释的验证设计，并核查其能否回答问题 |
-| 结果诊断与下一步 | 核查可比性、竞争解释、不确定性和继续／调整／停止条件 |
-
-展示页把重加权、稳定表示和目标域适配标为“策略/机制”：这些策略可以组合，不构成互斥分类。“验证设计”提出待实施的核查，不保证其充分性。
-
-支持导师提问与共同提出想法。先给可操作判断，再按需用问题卡、矩阵、假设或决策记录；复用现有文档。描述、预测、因果、测量、理论主张分别选择适合的证据与设计；定性研究和工程验证保留各自标准，不强制套统计实验。
-
-## 本机调用
-
-可以直接要求：“读取这个发布目录的 SKILL.md，并用于我的研究决策。”正式安装到 Codex 项目时，目标目录为 `.agents/skills/research-methodology/`；源目录可以叫 research-asterism 或其他名称，技能名与安装目录保持一致。在目标项目执行下列模板并替换源路径：
+在目标项目中运行，替换实际源码路径。离线辅助脚本需要 Python 3.10+：
 
 ```powershell
-$source = 'C:\path\to\research-asterism'
-$target = Join-Path (Get-Location) '.agents\skills\research-methodology'
-if (Test-Path -LiteralPath $target) { throw 'Target already exists' }
-$files = (Get-Content -LiteralPath (Join-Path $source 'release-files.json') -Raw | ConvertFrom-Json).files
-foreach ($file in $files) {
-    $destination = Join-Path $target $file
-    New-Item -ItemType Directory -Force -Path (Split-Path $destination) | Out-Null
-    Copy-Item -LiteralPath (Join-Path $source $file) -Destination $destination
-}
+python 'C:\path\to\research-asterism\scripts\install_skill.py' --target '.agents\skills\research-methodology'
+python 'C:\path\to\research-asterism\scripts\install_skill.py' --target '.agents\skills\research-methodology' --check
 ```
 
-已有目标会停止，避免覆盖。仅复制发布清单，排除 `.git` 和未列文件。安装后在目标项目新开会话刷新发现；其他宿主使用其配置的搜索路径。安装与直接读取是不同操作；调用名和安装目录始终为 research-methodology。
+安装器先校验完整源码，只复制十个运行文件；目标已存在就停止，不覆盖安装或项目笔记，不访问网络或调用模型。重新开启宿主会话刷新发现。其他宿主可以明确读取 `SKILL.md`，但未宣称自动集成已经逐一验证。[详细安装说明](docs/GETTING-STARTED.md)。
 
-## 验证与预览
+```text
+使用 $research-methodology。
+主题是分布变化下的概率校准，目前没有论文或数据。
+请界定问题、比较方法假设，给出下一项有判断价值的核查。
+暂不运行实验。
+```
 
-Python 3.10 以上，只用标准库：
+## 三种模式，共用一条证据循环
 
-```console
+![问题→假设与机制→具体限制→竞争预测→区分验证→判断；阅读检索可循环](assets/workflow.svg)
+
+| 模式 | 实际工作 | 完整合成示例 |
+| --- | --- | --- |
+| 领域与方法地图 | 比较机制、假设与时间演进；分开需求和实际性能 | [群体变化](site/workflows.html#map) |
+| 想法评估与最小验证 | 检查主张、近邻与竞争解释，选择能改变判断的设计 | [不可比报告](site/workflows.html#idea) |
+| 结果诊断与下一步 | 核查测量、机制是否生效、精度及正负证据范围 | [不稳定差异](site/workflows.html#result) |
+
+**第一性原理作为按需推理工具：**拆开目标与观测，说明前提和约束的来源；跨领域迁移携带成立条件；产生不同预测；核查测试是否触及机制。它与文献和实验配合，不凭“本质”宣告事实，不强迫所有学科还原成物理或数学公理。[原创方法指南](docs/HANDBOOK.md)。
+
+## 一个简短示例
+
+**合成输入：**“处处可导就能推出导数连续吗？多画几个数值例子可以证明吗？”
+
+**示范判断：**不能。全称命题需要证明，而且这项说法缺少更强前提时是假的。令 `f(0)=0`，非零时 `f(x)=x² sin(1/x)`；零点导数存在且为零，但非零点导数为 `2x sin(1/x) − cos(1/x)`，趋近零时没有极限。下一步应修订定理条件、追踪证明依赖，而不是扩充数值表。
+
+这是分析示例，不是新的实证发现。[更多输入输出](examples/synthetic-examples.md)。
+
+## 可信判断的边界
+
+- 区分来源报告、推断、待验证假说；引用存在不等于支持当前条件下的结论。
+- 需求、方法假设、证据状态、实际性能分别呈现；没测量就写无数据，不把不可比结果排成名次。
+- 描述、预测、因果、测量、理论与定性工作有不同证据义务；预测提升不识别因果，不显著不等于等效。
+- 查最近邻与旧思想；未检索到和模块组合都不证明新颖。
+- 检测当次工具能力。没有检索就标注暂定；数据、实验、费用与公开范围遵循本轮授权。
+
+不自动恢复旧研究、训练或公开材料，不承诺论文录用。[主张与设计](references/claim-design.md) · [结构说明](docs/ARCHITECTURE.md)。
+
+## 评估必须可以检查
+
+历史 `v0.3.0` 使用六个开发案例，with/without 逐题新上下文、相同回答上限；匿名比较与位置反转分别有 **4/6、3/6** 偏好技能，反转比较一次偏好基线，两题评判不一致。实际字符总量有技能多 4.6%。这不是留出效果证明，也不能代表跨领域科研能力。
+
+`v0.4.0` 新增假设拆解指引；新的作者运行检查单独记录，**本版本尚无新的独立 with/without 比较**。旧原始回答、掩码、判断和指纹不改写；旧入口保存版本快照。[完整结果与限制](docs/EVALUATION.md)。
+
+```sh
 python scripts/validate.py .
 python -m unittest discover -s tests -v
-python scripts/package_release.py . --output /absolute/path/research-methodology.zip
-python -m http.server 8000 --bind 127.0.0.1
 ```
 
-打开 `http://127.0.0.1:8000/site/`。网页没有构建依赖和外部资源请求。已安装副本可加 `--installed` 检查目录名。
+这些命令检查结构和回归，不判断科学真伪或新颖性。可选浏览器验证需要 Playwright 和可用浏览器，不调用模型 API。
 
-结构校验与浏览器测试不证明科研结论、新颖性或技能效果。脚本不自动调用模型。旧答案及偏好保留在 [旧评估记录](evals/RESULTS.md)，并标明混杂因素；新运行见 [科学修订记录](evals/SCIENTIFIC-REVIEW.md)。审查启发的案例属于开发回归，不能称为严格留出盲测，偏好数量也不是普遍有效性证明。
+## 文档与参与
 
-## 使用边界与贡献
+[开始使用](docs/GETTING-STARTED.md) · [工作模式](docs/WORKFLOWS.md) · [原创指南](docs/HANDBOOK.md) · [维护结构](docs/ARCHITECTURE.md) · [贡献方式](CONTRIBUTING.md) · [隐私与安全](SECURITY.md) · [版本记录](CHANGELOG.md) · [软件引用](CITATION.cff)
 
-能核实什么取决于当次工具和授权。没有检索时可分析材料，但证据范围与新颖性未核实。引用存在不等于支撑结论，未找到不等于新颖，模块组合不等于贡献。不承诺顶会，不自动跑旧研究、训练、上传数据或付费服务。
-
-保持短入口和按需参考，用合成案例检验失败，保存真实运行及负结果。MIT 只覆盖本包原创内容；手册 PDF、全文、图、私密项目历史均不进入发布候选，署名不表示来源作者参与或背书。
+原创指令、代码、文档与图示采用 MIT。指南借鉴彭明輝的研究教学与维护者自建技能的通用思想，以独立结构和原创表达重写；署名不表示原作者参与或背书。旧十四页二次整理稿、原图、大量原文和私人项目记录均不进入发行包。其他技能仓库仅借鉴组织和评估设计，未复制其文本代码，包括非商业许可证材料。详见[来源与许可](SOURCES.md)。

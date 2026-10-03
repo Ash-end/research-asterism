@@ -12,6 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from package_release import package
 from validate import validate
+from install_skill import install
+from verify_evaluation import verify
 
 
 class PackageTests(unittest.TestCase):
@@ -92,6 +94,31 @@ class PackageTests(unittest.TestCase):
         data['cases'].append(data['cases'][0])
         path.write_text(json.dumps(data), encoding='utf-8')
         self.assertTrue(any('Scientific cases need unique IDs' in e for e in validate(self.root)))
+
+    def test_runtime_install_excludes_docs_and_retains_entrypoint(self):
+        target=Path(self.temp.name)/'project/.agents/skills/research-methodology'
+        result=install(self.root,target)
+        self.assertEqual(result['runtime_files'],10)
+        self.assertTrue((target/'SKILL.md').is_file())
+        self.assertTrue((target/'references/claim-design.md').is_file())
+        self.assertFalse((target/'docs').exists())
+        self.assertFalse((target/'evals').exists())
+        self.assertEqual(install(self.root,target,check=True)['mode'],'check')
+
+    def test_runtime_install_preserves_existing_target(self):
+        target=Path(self.temp.name)/'project/.agents/skills/research-methodology'
+        target.mkdir(parents=True)
+        marker=target/'user-notes.txt'
+        marker.write_text('existing user content',encoding='utf-8')
+        with self.assertRaises(FileExistsError):
+            install(self.root,target)
+        self.assertEqual(marker.read_text(encoding='utf-8'),'existing user content')
+
+    def test_historical_fingerprint_drift_is_detected(self):
+        self.assertTrue(all(c['ok'] for c in verify(self.root)))
+        old=self.root/'evals/snapshots/v0.3.0/SKILL.md'
+        old.write_bytes(old.read_bytes()+b'changed historical bytes')
+        self.assertFalse(all(c['ok'] for c in verify(self.root)))
 
 
 if __name__ == '__main__':
