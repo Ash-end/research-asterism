@@ -1,0 +1,53 @@
+{
+  "expected": [
+    {
+      "id": "t01",
+      "should_trigger": true
+    },
+    {
+      "id": "t02",
+      "should_trigger": true
+    },
+    {
+      "id": "t03",
+      "should_trigger": true
+    },
+    {
+      "id": "t04",
+      "should_trigger": true
+    },
+    {
+      "id": "t05",
+      "should_trigger": true
+    },
+    {
+      "id": "t06",
+      "should_trigger": true
+    },
+    {
+      "id": "t07",
+      "should_trigger": false
+    },
+    {
+      "id": "t08",
+      "should_trigger": false
+    },
+    {
+      "id": "t09",
+      "should_trigger": false
+    },
+    {
+      "id": "t10",
+      "should_trigger": false
+    },
+    {
+      "id": "t11",
+      "should_trigger": false
+    },
+    {
+      "id": "t12",
+      "should_trigger": false
+    }
+  ],
+  "note": "Reference labels for semantic routing evaluation; never shown to the routing agent. These labels do not implement a keyword router."
+}

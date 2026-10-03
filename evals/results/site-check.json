@@ -1,0 +1,192 @@
+{
+  "browser": "Microsoft Edge / Playwright",
+  "base": "http://127.0.0.1:8766/research-asterism",
+  "checks": [
+    {
+      "name": "project root redirects within project to showcase",
+      "ok": true
+    },
+    {
+      "name": "published brand in title",
+      "ok": true
+    },
+    {
+      "name": "header brand is Research Asterism",
+      "ok": true
+    },
+    {
+      "name": "real GitHub navigation link",
+      "ok": true
+    },
+    {
+      "name": "initial map panel visible",
+      "ok": true
+    },
+    {
+      "name": "mouse mode idea",
+      "ok": true
+    },
+    {
+      "name": "mouse mode result",
+      "ok": true
+    },
+    {
+      "name": "mouse mode map",
+      "ok": true
+    },
+    {
+      "name": "arrow keyboard selection",
+      "ok": true
+    },
+    {
+      "name": "End selects final tab",
+      "ok": true
+    },
+    {
+      "name": "Home selects first tab",
+      "ok": true
+    },
+    {
+      "name": "clipboard exact content prompt-code",
+      "ok": true
+    },
+    {
+      "name": "invocation remains compatible",
+      "ok": true
+    },
+    {
+      "name": "clipboard exact content install-code",
+      "ok": true
+    },
+    {
+      "name": "clone source and stable install target are distinct",
+      "ok": true
+    },
+    {
+      "name": "install copies explicit release manifest",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow at 320",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow at 390",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow at 768",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow at 1440",
+      "ok": true
+    },
+    {
+      "name": "reduced motion disables animation",
+      "ok": true
+    },
+    {
+      "name": "reduced motion disables smooth scroll",
+      "ok": true
+    },
+    {
+      "name": "docs mobile no overflow at 320",
+      "ok": true
+    },
+    {
+      "name": "docs example opens",
+      "ok": true
+    },
+    {
+      "name": "all landing and docs linked resources reachable",
+      "ok": true
+    },
+    {
+      "name": "relative documentation stays in project subpath",
+      "ok": true
+    },
+    {
+      "name": "no browser errors",
+      "ok": true
+    },
+    {
+      "name": "no external asset requests",
+      "ok": true
+    },
+    {
+      "name": "without JavaScript default example visible",
+      "ok": true
+    },
+    {
+      "name": "without JavaScript docs alternative",
+      "ok": true
+    }
+  ],
+  "widths": [
+    {
+      "width": 320,
+      "body": 320,
+      "viewport": 320
+    },
+    {
+      "width": 390,
+      "body": 390,
+      "viewport": 390
+    },
+    {
+      "width": 768,
+      "body": 768,
+      "viewport": 768
+    },
+    {
+      "width": 1440,
+      "body": 1440,
+      "viewport": 1440
+    }
+  ],
+  "linkStatuses": [
+    {
+      "url": "http://127.0.0.1:8766/research-asterism/site/",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8766/research-asterism/site/index.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8766/research-asterism/site/docs.html",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8766/research-asterism/evals/RESULTS.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8766/research-asterism/SOURCES.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8766/research-asterism/README.zh-CN.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8766/research-asterism/README.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8766/research-asterism/LICENSE",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8766/research-asterism/examples/synthetic-examples.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8766/research-asterism/references/output-forms.md",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "externalRequests": []
+}
