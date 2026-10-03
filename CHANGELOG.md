@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.5.0 — 2026-10-03
+
+- Add a preparation and eight-step route from batch orientation and family chronology through understanding to concrete method construction; keep local entry and the three existing modes.
+- Embed first-principles moves in learning, cause analysis and construction. Add explicit procedure, compatibility, cost and new-limit obligations for candidates, accepting useful classical methods.
+- Correct method tables to distinguish source reports, conditional derivations, measurements and hypotheses; keep application requirements separate.
+- Rewrite the ten-chapter original guide and constructive synthetic walkthrough; align bilingual READMEs and five static pages.
+- Preserve a complete v0.4.1 runtime baseline and new independent-context development comparisons, with actual results and limits reported separately.
+- Runtime installation now copies 11 files; existing-target refusal and publication allowlist remain.
+
+
 ## 0.4.1 — 2026-10-03
 
 - Distinguished undelivered intervention, absent predicted mechanism response after delivery, and absent outcome response after mechanism change. Required independent predefined operational checks instead of inferring activation from success.

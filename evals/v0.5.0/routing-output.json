@@ -1,0 +1,65 @@
+{
+  "cases": [
+    {
+      "id": "t01",
+      "should_trigger": true,
+      "reason": "请求从兴趣主题构造可检验的小研究问题，属于研究想法形成。"
+    },
+    {
+      "id": "t02",
+      "should_trigger": true,
+      "reason": "请求按机制和假设梳理论文流派，并据此选择阅读方向和识别未解限制。"
+    },
+    {
+      "id": "t03",
+      "should_trigger": true,
+      "reason": "请求评估研究贡献并设计最小区分实验，直接涉及想法评估和最小验证。"
+    },
+    {
+      "id": "t04",
+      "should_trigger": true,
+      "reason": "请求判断结果是否支持方法改进，并确定下一步确认方式，属于结果诊断和研究决策。"
+    },
+    {
+      "id": "t05",
+      "should_trigger": true,
+      "reason": "请求通过导师提问理解定理反例的含义，符合描述支持的研究理解和导师式讨论。"
+    },
+    {
+      "id": "t06",
+      "should_trigger": true,
+      "reason": "请求依据需求与现有方法的差距共同形成科研方向，属于有依据的研究构思。"
+    },
+    {
+      "id": "t07",
+      "should_trigger": false,
+      "reason": "任务仅为摘要翻译，明确排除研究方案分析，不需要研究理解或决策流程。"
+    },
+    {
+      "id": "t08",
+      "should_trigger": false,
+      "reason": "任务仅修复引用格式和标点，属于描述明确排除的引用格式工作。"
+    },
+    {
+      "id": "t09",
+      "should_trigger": false,
+      "reason": "请求修复排序函数的类型错误，是普通实现调试，没有研究问题或研究决策。"
+    },
+    {
+      "id": "t10",
+      "should_trigger": false,
+      "reason": "请求仅润色论文语言，并保持研究设计和结论不变，不涉及研究评估。"
+    },
+    {
+      "id": "t11",
+      "should_trigger": false,
+      "reason": "请求初中数学定义和计算示例，是基础教学讲解，没有科研学习或研究决策目的。"
+    },
+    {
+      "id": "t12",
+      "should_trigger": false,
+      "reason": "请求设计活动海报，且明确无需研究问题，属于视觉设计任务。"
+    }
+  ],
+  "scope": "Independent manual description-routing classification, not automatic host trigger integration"
+}

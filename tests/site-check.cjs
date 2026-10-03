@@ -51,7 +51,10 @@ function check(name,ok){checks.push({name,ok});if(!ok)throw Error(name);}
   check('strategy table preserves combinability',await page.locator('#method-assumptions th').first().innerText()==='策略/机制'&&(await page.locator('#method-assumptions caption').innerText()).includes('这些策略可以组合，不构成互斥分类'));
   check('requirements separate from performance',await page.locator('#requirements-matrix').count()===1&&await page.locator('#performance-matrix').count()===1);
   const cells=await page.locator('#performance-matrix td[data-evidence]').evaluateAll(es=>es.map(e=>({status:e.dataset.evidence,text:e.textContent.trim()})));
-  check('no synthetic performance invented',cells.length===3&&cells.every(c=>c.status==='no-data'&&c.text==='无数据'));
+  check('conditional properties labeled',cells.length===3&&cells.every(c=>c.status==='derivation'));
+  check('synthetic costs not measured',(await page.locator('#performance-matrix caption').innerText()).includes('不是实测'));
+  await page.locator('#tab-idea').click();check('concrete method and cost',(await page.locator('#panel-idea').innerText()).includes('2+20/K')&&await page.locator('#panel-idea ol li').count()===3);
+  await page.locator('#tab-map').click();
   check('evidence has separate display',(await page.locator('.evidence-status').innerText()).includes('未提供'));
   await page.setViewportSize({width:1440,height:1000});await page.screenshot({path:path.join(out,'workflows.png'),fullPage:true});
   await page.goto(base+'/site/docs.html',{waitUntil:'networkidle'});

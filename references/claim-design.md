@@ -1,5 +1,8 @@
 # Match evidence to the claim
 
+Fit these obligations to the current learning or construction node; a short local derivation does not require every branch below. For a concrete candidate, connect the intended claim to its procedure or relation and the smallest distinguishing check. A classic method can satisfy the actual need even when a novel contribution remains absent. See [learning path](learning-path.md).
+
+
 Use the relevant branch when designing a study or assessing what a result establishes. This is a decision aid, not a universal taxonomy or a checklist to print on every task. A study can support one kind of claim without supporting another.
 
 ## Choose the claim and target

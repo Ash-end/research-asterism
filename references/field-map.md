@@ -1,39 +1,34 @@
 # Field and method map
 
-Use when the researcher needs orientation, a reading path, or a scoped question. A map is a decision aid, not automatically an exhaustive or systematic review.
+Use for orientation, a productive reading path, or a scoped problem. For a complete novice route see [learning path](learning-path.md). A map is a decision aid; it is not automatically an exhaustive or systematic review.
 
-## Frame and investigate
+## Frame and gather an initial batch
 
-Start with the target phenomenon or task and the setting in which failure matters. If only a topic is given, propose a clearly tentative setting and explain the decision it would enable. Ask the most consequential scope question without blocking a provisional map.
+Start with the phenomenon, observable inputs, target and setting in which failure matters. If only a topic is available, propose a tentative setting and make useful progress. Separate stakeholder requirements, benchmark conventions and your own assumptions. Relevant attributes can include identifiability, assumptions and explanatory scope as well as application latency or accuracy.
 
-Identify problem attributes: inputs and observability, objective, constraints, perturbations, scale, resources, and relevant outcomes. Separate a stakeholder need or requirement from a benchmark convention and from your own assumption.
+Skim supplied abstracts/introductions at a common depth and group them before deep-reading one by one. Surveys orient terminology; primary work supports consequential technical claims. Search by phenomenon, mechanism and premises, follow citations backward and forward, and revise queries as family structure emerges. Keep search date, sources and boundaries visible. No fixed count establishes coverage; popularity is a lead rather than quality evidence.
 
-Identify what kind of claim the map is intended to enable and its target quantity or interpretation. A method family is defined along a stated mechanism/assumption axis; different objectives, such as prediction and causal identification, cannot be ranked as if they answered the same question. Use the relevant branch of [claim and design](claim-design.md) when selecting a validation.
+## Classify and read through time
 
-Use surveys or tutorials to orient terminology, then locate primary work for claims that determine the decision. Retrieve by the phenomenon, mechanism, assumptions, and adjacent terminology. Follow citations backward for origins and forward for corrections or changed conditions. Search and reading may alternate; change queries when the family structure exposes a missing synonym or rival mechanism. Keep the search's date, sources, and boundaries visible. Do not equate citation counts, venue prestige, or repository stars with evidence quality.
+State the family axis: the relation, operation or assumption that produces the result. Names such as supervised, Bayesian, neural and online can describe overlapping axes. Permit tentative or overlapping membership. For each family identify its mechanism and premises, authors' claimed advantages, other papers' criticisms, relevant settings, and later changes that address earlier limitations. Attribute criticism until its basis is checked; chronological order alone is not inheritance.
 
-## Classify by explanatory structure
+Choose a reading route within the most relevant family: a clear explanation or example first, then decisive equations/operations/proof/protocol, cross-checking harder sources. Make a tentative explanatory guess, check the original details and revise it. Deep-read what the present conclusion depends on; unseen full-text details stay unknown. Summarize why an advantage occurs and which limitation matters in the target setting, then repeat for another consequential family.
 
-For each relevant family, identify:
+## Keep two different tables
 
-- The mechanism: what information or operation produces the outcome?
-- Assumptions: what must be observed, stable, identifiable, bounded, or supplied?
-- Evolution: which earlier limitation did a later variant address, and at what cost?
-- Demonstrated capability: claim, protocol, source locator, and reading depth.
-- Failure boundary: a reported failure, an inferred mismatch, or an untested concern.
+The **problem/application requirements table** states which properties a setting needs, their priority or threshold, and why. Define any proxy and the basis linking it to the real need. In basic research a requirement may concern identifiable parameters or a theorem's scope, rather than a market application.
 
-Methods may span families. State the classification axis and permit overlapping membership rather than forcing product names into disjoint buckets. If dates or origins are unknown, leave the timeline incomplete. A citation supplied by one author about another is a lead, not verified criticism until the underlying work is checked.
+The **method property/performance table** states what a method can do under declared conditions and the kind of support:
 
-For example, supervised learning, Bayesian inference, a neural representation and online updating describe different axes and can coexist. Chronological order alone is not evidence of inheritance. In basic research, relevant comparison dimensions may be identifiability, error bounds, assumptions or explanatory scope rather than application demand. Keep not measured, unknown, incompatible and observed failure distinct.
+- Source-reported property: identify the author, locator, reading depth and conditions; reporting is not independent verification.
+- Conditional derivation: show the operative relation and premises, including an uninspected proof obligation where relevant.
+- Empirical estimate: retain outcome, units, direction, protocol/budget, independent units and uncertainty actually supplied or computed.
+- Untested hypothesis: label the conjectured benefit or cost; do not promote it to an established capability.
 
-Read in layers: task and claimed outcome; mechanism and assumptions; decisive equations, proof steps, or protocol; evidence and limitations. Deep-read what the current conclusion depends on. Selective reading must not justify certifying an unexamined proof or measurement. An abstract-only source cannot establish details that require full text.
+No measurement means no empirical estimate; it does not mean a justified analytical property must be “no data.” Keep unknown, unsupported, incompatible and observed failure distinct. Qualitative good/average/poor or symbols need a property-specific meaning, conditions and basis; they are not numerical measurements. Define an importance legend separately from a capability legend. See [forms](output-forms.md).
 
-## Compare two different things
+Join tables by property and compatible setting to find a specific unmet need. Do not average importance and performance into one scientific score or rank outcomes that answer different questions. Check whether a seeming bottleneck instead reflects an unjustified requirement, missing coverage or incomparable evidence.
 
-The requirements matrix asks which properties matter in each target application and why. Define each property and its basis; a convenient count is not automatically a valid proxy for the need. The performance matrix asks what each method actually achieves under declared conditions, with an estimate or bound, units, uncertainty and support. Keep method assumptions in the family map and evidence gaps in a status note. An untested assumption is not a performance value. With no measurement, write "no data"; do not fill the cell with a speculative benefit or cost. See the forms when a table helps.
+## Deliver a choice that supports construction
 
-Join the matrices by property and compatible setting to locate a **specific unmet requirement**. Do not join them by an averaged score. Mark missing measurements, unmet requirements, and incomparable evidence differently. A requirement that no assessed method meets is a candidate bottleneck; first check whether the requirement, missing coverage, or comparison itself is flawed.
-
-## Deliver the map as a research choice
-
-Explain which family or unresolved boundary merits attention, why it matters, and the evidence that would alter that choice. Suggest a reading path tied to unresolved assumptions, not an arbitrary paper quota. Turn the mismatch into a bounded question and a cheap diagnostic, then move to idea testing if useful. If the map is based on supplied material only, say so.
+Give the most useful next reading or bounded question and why it matters. Trace a supported weakness to its likely cause, distinguish the inferred step, and propose how to avoid it or relax a limiting premise while retaining an advantage. Move to [idea construction](idea-test.md) when the user wants their own method. Recommend a classic method when it already meets the need. A provisional supplied-material map must state its boundary.

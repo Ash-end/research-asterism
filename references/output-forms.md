@@ -1,49 +1,46 @@
 # Optional output forms
 
-Use the smallest combination that serves the decision. Omit irrelevant fields, show unknowns, and adapt to existing project records. Start with the judgment rather than a form.
+Start with the useful judgment and use the smallest form that helps. Omit irrelevant fields, show unknowns and reuse existing records. None of these forms requires a folder tree or fixed candidate count.
 
 ## Question card
 
-`Decision now | object/phenomenon | claim type | conditions/population/time | target quantity or interpretation | bounded question | comparator | assumptions | decisive uncertainty`
+`Decision now | phenomenon/target | observations | conditions | bounded question | meaningful need | comparator | decisive uncertainty`
 
-For empirical design, add assignment/sampling/measurement units and validation split only when relevant. A theoretical question instead needs its domain, quantifiers and proof obligations. Qualitative work needs evidence-to-interpretation scope and rival accounts. Omit fields that do not affect the decision.
+For theory add domain, quantifiers and obligations; for qualitative work add material/context and rival interpretations; for empirical work add units or data roles when consequential.
 
-## Method family map
+## Family and evolution map
 
-| Family/mechanism | Assumptions | Earlier → later change | Demonstrated result and locator | Boundary and evidence status | Reading/check needed |
-| --- | --- | --- | --- | --- | --- |
+| Family axis/mechanism | Premises | Earlier → later change | Own claimed advantage | Other-source criticism and status | Setting relevance | Reading route |
+| --- | --- | --- | --- | --- | --- | --- |
 
-Dates, origins, or relationships not verified stay unknown. Membership can overlap.
+Names and dates not checked stay tentative; membership can overlap. Separate a reported criticism from an inspected flaw.
 
-## Application requirements matrix
+## Problem/application requirements table
 
-| Property and operational definition | Application/setting | Priority or threshold | Requirement basis | Unknowns |
+| Property and meaning | Setting/problem | Priority or threshold | Requirement basis | Unknowns |
 | --- | --- | --- | --- | --- |
 
-This is a statement of needs, not of method assumptions or measured capability. Define the property and its link to the decision. A proxy such as a switch count cannot stand for maintenance labor without evidence of that relationship. Distinguish essential constraints from preferences and assumptions. If using qualitative symbols, define them as importance, not capability.
+This describes needs. A qualitative symbol means importance according to a declared legend; it does not assert method capability. A proxy needs a basis linking it to the actual objective.
 
-## Method performance matrix
+## Method property/performance table
 
-| Method/family | Property, unit, direction | Estimate and uncertainty | Protocol/setting/budget | Evidence locator and status | Comparable with |
-| --- | --- | --- | --- | --- | --- |
+| Method | Property/consequence | Conditions | Value or qualitative description | Support kind and locator | Uncertainty/gap | Comparable with |
+| --- | --- | --- | --- | --- | --- | --- |
 
-This contains actual outcome estimates or supported bounds under conditions. State measured versus author-reported support. Do not insert suitability assumptions or a speculative mechanism benefit as a performance estimate. Without outcome evidence, write "no data" and describe the needed measurement separately. Incompatible results stay with their own protocols; no ranking follows. Keep assumptions in the family map and gaps in evidence status. Do not copy importance marks from requirements into performance cells.
+Support can be a source-reported property, conditional derivation, actual empirical estimate, or explicit untested hypothesis. Show formula premises and source depth. Numerical performance needs outcome evidence and its protocol/units/uncertainty; a derivable property need not be measured first. Unknown is not bad performance. Incompatible quantities retain their own conditions. Qualitative capability symbols need their own legend, distinct from requirement importance. Do not average the two tables into a scientific score.
 
-## Hypothesis and nearest-neighbor comparison
+## Concrete candidate
 
-| Candidate claim | Evidence/basis | Untested step | Closest known work | Same/different mechanism, assumptions, or setting | Residual contribution and uncertainty |
-| --- | --- | --- | --- | --- | --- |
+`Need → limiting premise/failure cause → change | retained advantage | inputs/state/operations/output | compatibility | cost/new weakness | support versus guess | rival and different prediction | closest known mechanism and residual claim`
 
-Use verified sources or supplied labels, not invented paper titles. A plausible difference is a hypothesis about contribution until its significance is tested.
+For an algorithm specify usable steps; for a theorem a statement and dependency route; for interpretation a material-grounded relation. This is more than a module list or an empty candidate table.
 
-## Minimal discriminating validation
+## Minimal validation
 
-`Favored explanation vs rival | different predictions | cheapest informative check | data and controls | outcome and uncertainty | authorized budget | continue / adjust / stop / inconclusive interpretation`
+`Favored explanation vs rival | distinguishing predictions | cheapest sufficient check | data/controls/resources | outcome/uncertainty | interpretation before outcomes | authorized next action`
 
-Predeclare the relevant difference or margin with a justification, or label it provisional. Separate experiment design from executed results.
+## Decision record
 
-## Short decision record
+`Decision and scope | evidence inspected | rationale | uncertainty most likely to reverse it | next action | revisit trigger`
 
-`Decision and scope | evidence inspected | rationale and rejected alternative | unknown most likely to reverse decision | next action | owner if known | revisit trigger`
-
-Append or edit in the user's existing format when requested. The forms do not require a particular folder tree, persistent registry, weighted score, or multi-agent workflow.
+Keep planned, attempted, completed and inspected operations distinct. Fit the existing project format rather than laying out a new required registry.

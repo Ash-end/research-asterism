@@ -17,4 +17,5 @@ jobs:
           python-version: '3.12'
       - run: python scripts/validate.py .
       - run: python scripts/verify_evaluation.py .
+      - run: python scripts/check_comparison.py .
       - run: python -m unittest discover -s tests -v

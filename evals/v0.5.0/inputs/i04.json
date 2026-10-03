@@ -1,0 +1,154 @@
+{
+  "id": "i04",
+  "request": "同事看到最新的小样本结果后问：‘这次间隔练习的七天回忆更低，是不是已经把之前说的间隔练习优势推翻了？而且学习者觉得集中练习更顺，所以我们可以直接停用间隔练习了吧？’请只回答这两个证据判断，结合正向、零效应和反向的合成结果，说明目前结论应到什么程度。若需追加检查，只提出一个能够区分主要解释的最小检查，并写清它要比较什么。不要扩展成完整教学方案，不要检索或把合成结果当真实心理学结论。",
+  "materials": {
+    "provenance": "本任务的研究机构、文献、参与者、问卷和逐人记录全部虚构；所有样本量、分数、时间及差值均为合成数字。以下结果不能作为真实记忆研究的证据。",
+    "common_definitions": {
+      "task": "学习24个无实际语言含义的图形—代号配对，最后根据图形填写代号。",
+      "massed": "集中条件：同一天完成三轮练习，每轮之间隔5分钟。",
+      "spaced": "间隔条件：第1、3、5天各完成一轮练习。",
+      "outcomes": "即时回忆是在最后一轮结束10分钟后测量；七天回忆是在最后一轮结束7天后测量。分数均为0—100的正确率百分数。流畅感是1—7分自评，越高表示觉得练习更顺。",
+      "scoring": "旧研究把可辨认的轻微书写变体记为正确。最新试验改用逐字符完全一致记分，同时保存了原始回答。最新试验没有按旧规则重新记分。",
+      "interpretation_limits": "流畅感、即时表现和七天回忆是三个不同的观测结果。资料没有给出停用某种练习的成本阈值或教学目标权重。"
+    },
+    "fictional_studies": [
+      {
+        "source_id": "F-M01",
+        "title": "合成学习档案：等时长三轮配对练习",
+        "year": 2019,
+        "design": "两个随机分组，各40人；每组累计练习18分钟、每对项目出现三次；七天测验完成率100%。",
+        "rows": [
+          {
+            "condition": "集中",
+            "immediate_mean": 86,
+            "day7_mean": 63,
+            "day7_sd": 16,
+            "fluency_mean": 5.9
+          },
+          {
+            "condition": "间隔",
+            "immediate_mean": 79,
+            "day7_mean": 72,
+            "day7_sd": 15,
+            "fluency_mean": 4.6
+          }
+        ],
+        "missing_information": "没有逐人数据，也没有书写变体错误的数量。"
+      },
+      {
+        "source_id": "F-M02",
+        "title": "合成学习档案：相同练习时长的复现",
+        "year": 2021,
+        "design": "两个随机分组，各30人；每组累计练习18分钟、每对项目出现三次；七天测验完成率100%。使用另一套合成图形与代号，但难度只依据研究者预先判断。",
+        "rows": [
+          {
+            "condition": "集中",
+            "immediate_mean": 83,
+            "day7_mean": 66,
+            "day7_sd": 18,
+            "fluency_mean": 5.7
+          },
+          {
+            "condition": "间隔",
+            "immediate_mean": 80,
+            "day7_mean": 65,
+            "day7_sd": 17,
+            "fluency_mean": 4.8
+          }
+        ],
+        "missing_information": "没有对两套材料做共同的难度测量，也没有逐人数据。"
+      },
+      {
+        "source_id": "F-M03",
+        "title": "合成学习档案：允许学习者自行延长练习",
+        "year": 2024,
+        "design": "两个随机分组，各36人；集中组平均总练习18分钟，间隔组平均24分钟；每对项目平均出现次数分别为3.0和4.1。七天测验完成率100%。",
+        "rows": [
+          {
+            "condition": "集中",
+            "immediate_mean": 87,
+            "day7_mean": 64,
+            "day7_sd": 14,
+            "fluency_mean": 6.0
+          },
+          {
+            "condition": "间隔",
+            "immediate_mean": 85,
+            "day7_mean": 76,
+            "day7_sd": 13,
+            "fluency_mean": 5.0
+          }
+        ],
+        "missing_information": "没有将多出的练习时长与次数单独控制。"
+      }
+    ],
+    "latest_synthetic_trial": {
+      "design": "12名参与者各学习两套不重复的配对，分别接受集中与间隔练习。套组与条件的对应顺序随机且各占一半。两条件均为18分钟、每对项目出现三次；测验延迟仍从各自最后一轮结束时起算。无缺失随访。采用共同定义中的新记分规则。",
+      "day7_paired_rows": [
+        {
+          "participant": "N01",
+          "massed": 78,
+          "spaced": 66
+        },
+        {
+          "participant": "N02",
+          "massed": 75,
+          "spaced": 65
+        },
+        {
+          "participant": "N03",
+          "massed": 72,
+          "spaced": 63
+        },
+        {
+          "participant": "N04",
+          "massed": 70,
+          "spaced": 64
+        },
+        {
+          "participant": "N05",
+          "massed": 74,
+          "spaced": 69
+        },
+        {
+          "participant": "N06",
+          "massed": 68,
+          "spaced": 64
+        },
+        {
+          "participant": "N07",
+          "massed": 71,
+          "spaced": 68
+        },
+        {
+          "participant": "N08",
+          "massed": 69,
+          "spaced": 67
+        },
+        {
+          "participant": "N09",
+          "massed": 66,
+          "spaced": 66
+        },
+        {
+          "participant": "N10",
+          "massed": 67,
+          "spaced": 68
+        },
+        {
+          "participant": "N11",
+          "massed": 64,
+          "spaced": 68
+        },
+        {
+          "participant": "N12",
+          "massed": 62,
+          "spaced": 72
+        }
+      ],
+      "fluency_summary": "集中条件自评均值5.8，间隔条件4.7；没有逐人流畅感数据。",
+      "retained_artifacts": "保留两条件全部原始回答、预先写下的答案表及条件随机分配表。未记录练习过程中的反应时间。",
+      "colleague_note": "同事将七天均值方向与流畅感方向合并，写下‘间隔练习效果已被推翻，应停用’。"
+    }
+  }
+}

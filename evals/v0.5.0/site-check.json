@@ -1,0 +1,462 @@
+{
+  "scope": "Browser behavior, layout and display contract; not scientific correctness",
+  "checks": [
+    {
+      "name": "root redirect preserves repository path",
+      "ok": true
+    },
+    {
+      "name": "home title",
+      "ok": true
+    },
+    {
+      "name": "version accurate",
+      "ok": true
+    },
+    {
+      "name": "short homepage separates deep examples",
+      "ok": true
+    },
+    {
+      "name": "original guide accessible",
+      "ok": true
+    },
+    {
+      "name": "no full PDF embed",
+      "ok": true
+    },
+    {
+      "name": "one main landmark index.html",
+      "ok": true
+    },
+    {
+      "name": "one primary heading index.html",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow index.html 320",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow index.html 390",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow index.html 768",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow index.html 1440",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor index.html main",
+      "ok": true
+    },
+    {
+      "name": "one main landmark workflows.html",
+      "ok": true
+    },
+    {
+      "name": "one primary heading workflows.html",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow workflows.html 320",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow workflows.html 390",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow workflows.html 768",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow workflows.html 1440",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor workflows.html main",
+      "ok": true
+    },
+    {
+      "name": "one main landmark docs.html",
+      "ok": true
+    },
+    {
+      "name": "one primary heading docs.html",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow docs.html 320",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow docs.html 390",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow docs.html 768",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow docs.html 1440",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor docs.html main",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor docs.html install",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor docs.html invoke",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor docs.html capabilities",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor docs.html examples",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor docs.html library",
+      "ok": true
+    },
+    {
+      "name": "one main landmark handbook.html",
+      "ok": true
+    },
+    {
+      "name": "one primary heading handbook.html",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow handbook.html 320",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow handbook.html 390",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow handbook.html 768",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow handbook.html 1440",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor handbook.html main",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor handbook.html chapter-1",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor handbook.html chapter-2",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor handbook.html chapter-3",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor handbook.html chapter-4",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor handbook.html chapter-5",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor handbook.html chapter-6",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor handbook.html chapter-7",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor handbook.html chapter-8",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor handbook.html chapter-9",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor handbook.html chapter-10",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor handbook.html sources",
+      "ok": true
+    },
+    {
+      "name": "one main landmark evaluation.html",
+      "ok": true
+    },
+    {
+      "name": "one primary heading evaluation.html",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow evaluation.html 320",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow evaluation.html 390",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow evaluation.html 768",
+      "ok": true
+    },
+    {
+      "name": "no horizontal overflow evaluation.html 1440",
+      "ok": true
+    },
+    {
+      "name": "same-page anchor evaluation.html main",
+      "ok": true
+    },
+    {
+      "name": "deep link selects idea",
+      "ok": true
+    },
+    {
+      "name": "mouse tab map",
+      "ok": true
+    },
+    {
+      "name": "mouse tab result",
+      "ok": true
+    },
+    {
+      "name": "mouse tab idea",
+      "ok": true
+    },
+    {
+      "name": "validation design label",
+      "ok": true
+    },
+    {
+      "name": "keyboard next",
+      "ok": true
+    },
+    {
+      "name": "keyboard End",
+      "ok": true
+    },
+    {
+      "name": "keyboard Home",
+      "ok": true
+    },
+    {
+      "name": "keyboard wrap",
+      "ok": true
+    },
+    {
+      "name": "strategy table preserves combinability",
+      "ok": true
+    },
+    {
+      "name": "requirements separate from performance",
+      "ok": true
+    },
+    {
+      "name": "conditional properties labeled",
+      "ok": true
+    },
+    {
+      "name": "synthetic costs not measured",
+      "ok": true
+    },
+    {
+      "name": "concrete method and cost",
+      "ok": true
+    },
+    {
+      "name": "evidence has separate display",
+      "ok": true
+    },
+    {
+      "name": "clipboard install-code",
+      "ok": true
+    },
+    {
+      "name": "clipboard prompt-code",
+      "ok": true
+    },
+    {
+      "name": "bounded install documented",
+      "ok": true
+    },
+    {
+      "name": "manual clipboard fallback",
+      "ok": true
+    },
+    {
+      "name": "static disclosure works",
+      "ok": true
+    },
+    {
+      "name": "reduced motion",
+      "ok": true
+    },
+    {
+      "name": "all local links reachable",
+      "ok": true
+    },
+    {
+      "name": "no external asset requests",
+      "ok": true
+    },
+    {
+      "name": "no script errors",
+      "ok": true
+    },
+    {
+      "name": "default readable without JS",
+      "ok": true
+    },
+    {
+      "name": "other scenarios have no-JS link",
+      "ok": true
+    }
+  ],
+  "widths": [
+    {
+      "page": "index.html",
+      "width": 320,
+      "scroll": 320,
+      "viewport": 320
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "scroll": 390,
+      "viewport": 390
+    },
+    {
+      "page": "index.html",
+      "width": 768,
+      "scroll": 768,
+      "viewport": 768
+    },
+    {
+      "page": "index.html",
+      "width": 1440,
+      "scroll": 1440,
+      "viewport": 1440
+    },
+    {
+      "page": "workflows.html",
+      "width": 320,
+      "scroll": 320,
+      "viewport": 320
+    },
+    {
+      "page": "workflows.html",
+      "width": 390,
+      "scroll": 390,
+      "viewport": 390
+    },
+    {
+      "page": "workflows.html",
+      "width": 768,
+      "scroll": 768,
+      "viewport": 768
+    },
+    {
+      "page": "workflows.html",
+      "width": 1440,
+      "scroll": 1440,
+      "viewport": 1440
+    },
+    {
+      "page": "docs.html",
+      "width": 320,
+      "scroll": 320,
+      "viewport": 320
+    },
+    {
+      "page": "docs.html",
+      "width": 390,
+      "scroll": 390,
+      "viewport": 390
+    },
+    {
+      "page": "docs.html",
+      "width": 768,
+      "scroll": 768,
+      "viewport": 768
+    },
+    {
+      "page": "docs.html",
+      "width": 1440,
+      "scroll": 1440,
+      "viewport": 1440
+    },
+    {
+      "page": "handbook.html",
+      "width": 320,
+      "scroll": 320,
+      "viewport": 320
+    },
+    {
+      "page": "handbook.html",
+      "width": 390,
+      "scroll": 390,
+      "viewport": 390
+    },
+    {
+      "page": "handbook.html",
+      "width": 768,
+      "scroll": 768,
+      "viewport": 768
+    },
+    {
+      "page": "handbook.html",
+      "width": 1440,
+      "scroll": 1440,
+      "viewport": 1440
+    },
+    {
+      "page": "evaluation.html",
+      "width": 320,
+      "scroll": 320,
+      "viewport": 320
+    },
+    {
+      "page": "evaluation.html",
+      "width": 390,
+      "scroll": 390,
+      "viewport": 390
+    },
+    {
+      "page": "evaluation.html",
+      "width": 768,
+      "scroll": 768,
+      "viewport": 768
+    },
+    {
+      "page": "evaluation.html",
+      "width": 1440,
+      "scroll": 1440,
+      "viewport": 1440
+    }
+  ],
+  "errors": [],
+  "resources_all_http200": true,
+  "no_machine_urls": "resource and anchor URLs omitted from public result"
+}

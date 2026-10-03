@@ -56,3 +56,8 @@ The earlier published page used [MotionSites](https://motionsites.ai/) and its [
 ## License scope
 
 The [MIT license](LICENSE) applies only to original content within this package: instructions, references, examples, scripts, tests, documentation, original website, and permitted synthetic evaluation outputs. It does not grant rights to cited sources or claim ownership of authors' underlying ideas. Contributions must be original or carry compatible, clearly recorded rights.
+
+
+## v0.5.0 original synthesis
+
+The learning route re-expresses preparation and eight iterative reading/construction moves in original wording, preserving batch orientation, family chronology, productive reading, guessed-and-corrected understanding and conditional bottleneck analysis. The occasional initial-batch counts are experience-based orientation rather than a universal protocol. Property comparison explicitly distinguishes reports, derivations, measurements and hypotheses; first-principles ideas support target/observation separation, cause analysis, conditional transfer and concrete construction. These are our design choices and explanatory additions, not quotations or a claim of endorsement. Source PDFs, source figures and custom private/domain configurations remain excluded; no new source redistribution license is claimed.

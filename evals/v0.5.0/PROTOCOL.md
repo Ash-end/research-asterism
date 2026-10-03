@@ -1,0 +1,13 @@
+# v0.5.0 development comparison protocol
+
+This run compares actual v0.4.1 and v0.5.0 skill use. It is not a current-version no-skill comparison; historical v0.3.0 with/without records remain separate.
+
+Six cases were informed by the design and its known development criteria. Four additional raw tasks were created in a separate context without reading the skill, design, old fixtures or expected conclusions. Their raw file was completed after runtime freeze; the author did not inspect it before freeze. The extra tasks provide independently authored development coverage, not broad held-out efficacy evidence. All sources and data are expressly fictional or synthetic.
+
+Each case-condition used a fresh native Codex subagent (`fork_turns=none`) with only its assigned skill, linked references as needed and the raw task. The performer received no expected answer, design plan, other version or peer answer. The two conditions used the same inherited host model family, tool restrictions and 1,800-Unicode-character ceiling per turn; the 150-character local request took priority. d02 was an actual two-turn interaction: initial material first, then the newly supplied full-text definition in that same case context. Both turns are preserved. No retrieval, real experiment, training, paid endpoint or private project execution was permitted.
+
+Two fresh comparators received raw tasks and anonymous A/B answers only, with no source identity, skill, expected conclusion or design. The first packet balances A/B across cases; the second reverses every position. Comparators assess task fidelity, concrete construction where applicable, truthfulness of conditions/evidence and efficient progress separately, with reasons and material issues. There is no keyword grader or single total score to conceal a serious error. Ties and disagreement are retained. Styles can still suggest identity, so anonymity does not guarantee complete psychological blinding.
+
+The 20 case-condition executions, 22 actual answer turns, raw task packets, both mask packets and judgments are retained. Versions and artifact SHA 256 values are recorded in run.json; verification checks bytes, not scientific correctness. Per-call model identifiers, tokens and reliable timing were not exposed and are not invented. Queue order and actual answer lengths can differ. One run per case-condition does not estimate model variance; two judgments of the same answers are not scientific replication. Domain experts and broader independent sampling remain necessary.
+
+Description routing is a separate fresh-context manual classification of the twelve raw positive/negative requests against the current description. It does not test automatic host trigger integration.

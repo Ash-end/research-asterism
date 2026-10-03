@@ -1,10 +1,10 @@
 {
   "name": "Research Asterism",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "release_date": "2026-10-03",
   "skill_name": "research-methodology",
   "repository": "https://github.com/Ash-end/research-asterism",
   "showcase": "https://ash-end.github.io/research-asterism/",
-  "approved_scientific_candidate_sha256": "0b236ee908d976d723d1c885a69cf2cfd60eb8d0f4238cfa39956b79d47b0036",
-  "scientific_evaluation": "Historical v0.3.0 independent development comparisons; v0.4.0/v0.4.1 author checks, not a new independent effectiveness benchmark"
+  "scientific_evaluation": "See evals/v0.5.0/RESULTS.md for actual v0.4.1/v0.5.0 development comparisons; older results remain historical",
+  "historical_v030_candidate_sha256": "0b236ee908d976d723d1c885a69cf2cfd60eb8d0f4238cfa39956b79d47b0036"
 }

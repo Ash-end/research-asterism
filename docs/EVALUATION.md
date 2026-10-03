@@ -2,6 +2,19 @@
 
 [Protocol](../evals/PROTOCOL.md) · [Historical scientific run](../evals/SCIENTIFIC-RUN.md) · [v0.4 checks](../evals/FIRST-PRINCIPLES-REVIEW.md)
 
+## Current v0.5.0 — actual old/new development comparison
+
+Compared with frozen v0.4.1 in 20 fresh case-condition contexts, with 22 answer turns; d02 receives new information in a real follow-up. Six tasks are design-informed development cases; four were independently authored after runtime freeze. Two fresh masked reviewers see only raw tasks and anonymous answers, with balanced/reversed positions and four separate semantic axes.
+
+| Comparator | v0.5.0 preferred | v0.4.1 preferred | Tie |
+| --- | ---: | ---: | ---: |
+| Balanced | 1 | 1 | 8 |
+| Reversed | 2 | 2 | 6 |
+
+These mixed results do not establish general superiority. Both reviewers prefer the old answer on d01 because the new eight-stage response overprocesses the novice's request for the easiest next route; both prefer the new answer on i04 because the old answer misstates one source direction. They disagree on d04 and i01 (tie versus preference). Concrete construction appears viable in both versions, but no empirical candidate success is established. Actual old/new lengths are 10,441/10,867 (+4.1%). Routing matched 12/12 by independent manual description classification, not automatic host discovery.
+
+The runtime and tasks were retained unchanged after this review; failures, baseline wins and ties were not removed. This is actual v0.4.1/v0.5.0 comparison, not a new no-skill benchmark. [Full current results and limits](../evals/v0.5.0/RESULTS.md) · [Protocol](../evals/v0.5.0/PROTOCOL.md) · [Raw run and fingerprints](../evals/v0.5.0/run.json).
+
 ## What is actually tested
 
 | Layer | Evidence | What it cannot establish |
@@ -20,7 +33,7 @@ The six v0.3.0 development cases cover predictive shift, causal identification, 
 | Seeded balanced forward | 4 | 0 | 2 |
 | Positions reversed | 3 | 1 | 2 |
 
-The two comparators disagreed on r02 and r05. Aggregate answer lengths were 6,142 with the skill and 5,870 without (+4.6%); equality of the ceiling did not make lengths identical. These results are narrow qualitative regression evidence, not proof that the skill improves research or warrants a publication claim.
+The two comparators disagreed on r 02 and r 05. Aggregate answer lengths were 6,142 with the skill and 5,870 without (+4.6%); equality of the ceiling did not make lengths identical. These results are narrow qualitative regression evidence, not proof that the skill improves research or warrants a publication claim.
 
 The original older comparison is also retained, with its fixed ordering, length and context confounds. No failed result or baseline win was removed. The raw masks, responses and run metadata are inspectable in [evaluation results](../evals/SCIENTIFIC-REVIEW.md).
 

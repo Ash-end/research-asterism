@@ -1,5 +1,8 @@
 # Evidence and capabilities
 
+For field learning, skim an initial batch at a common depth, classify by operative mechanisms and read one family through time before expanding targeted searches. No fixed paper quota establishes coverage. Use clear explanations to reach the decisive equations, proof dependencies or protocol. A source report, conditional derivation and explicit conjecture can all inform method properties when labeled; only actual outcome evidence supplies an empirical performance estimate. Retrieve when a consequential premise needs checking, not to postpone every useful construction. See [learning path](learning-path.md).
+
+
 ## Inspect capabilities before depending on them
 
 Use the host's available tools, documentation, and current permissions to determine whether retrieval, full-text reading, image/table inspection, computation, and controlled execution are possible. Do not infer availability from a tool name in a paper, an installed credential, or another project. Use an appropriate available tool; no particular MCP is required.

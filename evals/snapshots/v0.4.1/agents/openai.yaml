@@ -1,0 +1,6 @@
+interface:
+  display_name: "Research Asterism"
+  short_description: "Frame claims, assess evidence and design validation"
+  default_prompt: "Use $research-methodology to assess my current research question and choose the next useful validation."
+policy:
+  allow_implicit_invocation: true

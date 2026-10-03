@@ -1,5 +1,8 @@
 # Result diagnosis and next step
 
+Start at the relevant dependency; do not force a complete literature workflow onto a local result question. For an effective negative test, distinguish undelivered intervention, delivered intervention with an absent predicted mediator, and changed mediator with an absent outcome using independent predefined checks. A valid absent-mediator result may challenge the intervention → mechanism link; it is not automatically an invalid test. Preserve the observation and failed prediction. A positive result calls for the strongest rival and a useful boundary. Return to the cause at learning-path step 7, or the requirement choice at step 6, only when the evidence warrants it. See [learning path](learning-path.md).
+
+
 Use for unexpected, conflicting, positive, or negative findings, and for a proof or counterexample affecting the research decision.
 
 ## Establish what happened

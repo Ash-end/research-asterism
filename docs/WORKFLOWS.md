@@ -1,39 +1,50 @@
-# Three decision modes / 三个决策模式
+# Three modes and a complete constructed example
 
-[Getting started](GETTING-STARTED.md) · [Original guide](HANDBOOK.md) · [Full interactive examples](../site/workflows.html)
+Every label, timing and numeric value below is synthetic teaching material. No paper retrieval or experiment was performed. Use the example to inspect reasoning, not as evidence of a new scientific method.
 
-## 1. Field and method map / 领域与方法地图
+## Field map: batch reading to a targeted route
 
-Use when the question is what a field studies, how approaches differ, or where to read next. Start from the object, conditions and unresolved decision. Classify mechanisms and assumptions; follow historical changes within families. Strategies can overlap. Retrieval and reading can repeat without fixed paper counts.
+Input: six abstract-level notes: direct scaling (2012, zero bias), zero reference (2016, timing undefined), refreshed zero reference (2020, critiques stale references), channel differencing (2013, relative only), robust aggregation of differences (2019), and a renamed neural method (2022, mechanism absent). Need: absolute recovery in a changing environment.
 
-**Synthetic input:** “I want to study probability calibration when a model moves to another population. I have no papers yet.”
+Actionable judgment: first study the reference-correction family and its reference timing; the differencing family offers a useful contrast for absolute versus relative information. Leave the named neural approach unclassified until its mechanism is available.
 
-**Illustrative output:** “First define the target population and available information at decision time. Reweighting, stable representations and target adaptation address different conditions and may combine. There is no measured performance here. Read original evidence for their assumptions, then plan evaluation aligned with deployment units and time.”
+Group on operation/premise: scaling → reference correction → refresh within one related route; difference → robust aggregation within another. These are tentative relationships from supplied notes. The 2020 critique of stale references is an author report until checked. Read the clearest reference explanation first, then its definition of reference time, then the refresh procedure and cost. Update keywords around stale reference, bias tracking and absolute anchoring; there is no need to wait for a paper quota.
 
-Output can include a question card, a method map, separate requirements and performance matrices, and a short reading route. Assumptions, missing evidence and proxy metrics are not performance values.
+## Understanding: guess, check and correct
 
-## 2. Idea assessment and minimal test / 想法评估与最小验证
+First question: does `(y-y0)/g` remove all drift in `y=gx+b_t`? The timing of `y0` is missing, so full cancellation is only conditional. Full-text definition later says `y0=b_0`, measured initially at a known zero signal. Corrected inference: error is `(b_t-b_0)/g`. It removes initial bias, and remains useful if later bias stays near it, but does not remove arbitrary drift. This is a derivation, not an observed experimental result.
 
-Use when deciding whether to pursue a mechanism, whether its contribution survives nearest-neighbor comparison, or what small check would distinguish it from a rival. Decompose the claim, observations and assumptions; check transferable principles; compare older equivalent work. A combination can be useful without establishing novelty.
+## Two tables: method properties and application needs
 
-**Synthetic input:** “One report measures internal ranking, another external calibration. Does their comparison prove that my calibration step improves the target task?”
+| Synthetic method | Property under conditions | Support | Given design cost | Unknown |
+| --- | --- | --- | --- | --- |
+| A: `y/g` | Absolute recovery when `b=0`, known nonzero gain | Derivation | 2ms | Actual environment performance |
+| B: `(y-z)/g` | Bias cancels if contemporaneous zero reference `z=b` | Derivation | 12ms | Reference noise and measured cost |
+| C: channel difference | Common bias cancels; absolute anchor absent | Conditional derivation | Unknown | Timing and absolute anchor |
 
-**Illustrative output:** “They estimate different quantities and cannot rank the proposed methods for your target. Audit what each report supports; use matched target population, information timing and selection budget to compare the proposed step with a competitive baseline. This is a validation design, not an executed result.”
+| Synthetic setting | Needed property | Threshold/basis | Current fit |
+| --- | --- | --- | --- |
+| S1: bias zero | Absolute output | 3ms limit, supplied | A fits the stated model and cost |
+| S2: varying bias | Absolute output | 20ms limit, supplied | B fits if reference premise holds |
 
-Output can include a supported starting point, an explicitly speculative mechanism, nearest-neighbor differences, competing predictions and continue/adjust/stop/inconclusive conditions. Minimal means enough to change the decision, not merely cheap.
+Provided costs are design inputs, not actual measurements. C's timing is unknown rather than poor. Neither table is an overall score. An established sufficient answer can finish here.
 
-## 3. Result diagnosis and next step / 结果诊断与下一步
+## Constructing a concrete candidate
 
-Use for positive, negative, conflicting, imprecise or theoretical results. Check run and measurement validity, intervention delivery, the independently measured predicted mechanism response, and whether the design can answer the claim. A delivered intervention with no predicted mechanism response can challenge that link; it is not automatically an invalid test. Define operational checks before seeing outcomes and do not infer activation from success. Then weigh alternatives and choose an informative next action.
+New synthetic need: `y_t=x_t+b_t+noise`, arbitrary unknown `x_t`, slowly varying bias with possible jumps. Ordinary readings cost 2ms; a known-zero reference is extra and costs 20ms. Mean cost per ordinary reading must be ≤4ms.
 
-**Synthetic input:** “Repeated instrument readings changed direction after a material modification. Is the mechanism impossible?”
+Candidate: acquire a known-zero reference every K ordinary readings; update a stored bias estimate from the reference; subtract the latest estimate from subsequent ordinary readings; report the time since reference and invalidate or flag it beyond the chosen freshness rule. A periodic schedule avoids inferring bias from an arbitrary signal. Choose K≥10 to satisfy `2+20/K≤4`; use K=10 as the budget-feasible starting baseline, not a universal optimum. Fast drift and jumps can produce residual bias until the next reference; reference noise remains. Mean budget does not guarantee worst-case latency.
 
-**Illustrative output:** “The available evidence supports neither equivalence nor impossibility. Separate independent preparations from repeat readings; check intervention and measurement validity. A failed implementation may leave the hypothesis untested. A valid, sufficiently precise refutation can stop this formulation within its conditions.”
+The retained advantage is an absolute anchor; the cause addressed is a stale reference. The conjecture is that refresh improves error sufficiently in the intended drift regime. This is a classical-looking conditional candidate; novelty has not been established. Avoid calling the procedure innovative simply because it is expressed as multiple modules.
 
-Output can include a causal or logical dependency map, rival explanations, an evidence gap and a next discriminating check. Positive signals also require alternatives and boundary tests; negative signals do not automatically invalidate a whole field.
+Minimal check: analytically or in an authorized toy pilot compare initial-only correction, periodic refresh and a same-reference-budget alternative across constant bias, slow drift and jumps. Keep signal/noise information and resources matched. Examine residual bias, absolute error, reference budget and jump recovery delay; define a meaningful improvement before examining outcomes. A positive difference still needs a rival explanation and boundary check. An effective negative result can stop this parameterization without disproving all bias correction.
 
-## Mentoring and shared ideation
+## Local result diagnosis
 
-Ask a question that targets the consequential assumption, then show a concrete reasoning move. If asked to propose ideas, contribute candidates with their basis and risks. Respect a request for questions only. Reuse project records; no extra mandatory log system or fixed agent topology is imposed.
+A constructed negative packet says delivery and independent predefined mediator checks were valid; predicted residual-bias reduction ≥0.10, observed reduction 0.002 with interval[-0.005,0.009], and no expected outcome gain. The interval contradicts that meaningful reduction under the stated conditions. Preserve this failure of the intervention-to-mediator prediction and stop or revise its premise; do not automatically call the test invalid or conclude every setting is impossible.
 
-All examples are constructed, with no actual papers, data, scores or experiments implied. Detailed claim branches remain in [claim-design](../references/claim-design.md).
+A local formula question may need only: `y/g-x=b/g`, so the estimate is exact when `b=0` (with known nonzero `g`). No full workflow is needed.
+
+## Existing diagnostic examples
+
+The [earlier synthetic examples](../examples/synthetic-examples.md) retain incomparable protocols, negative evidence and a counterexample to an overbroad theorem. They remain useful for diagnosis. Their presence does not substitute for constructive behavior assessment.

@@ -1,5 +1,8 @@
 # Assumption-led reasoning and mechanism tests
 
+Use these moves inside the [learning path](learning-path.md): clarify target/observations during preparation; derive advantages from key relations in step 3; explain weaknesses in step 7; construct usable operations and distinct predictions in step 8. Do not finish at decomposition alone. When asked for a method, contribute its actual procedure or relation, retained advantage, conditions, resource tradeoff and new limitation. An adequate classical answer can close the decision; it need not be rejected for lacking an invented novelty claim.
+
+
 Use when the next decision depends on what a proposed mechanism assumes, what information is missing, whether a principle transfers, or what a failed test actually tested. Select useful moves; do not impose a new questionnaire, document hierarchy, physical reduction, or mathematical formalization on every discipline.
 
 ## Decompose before naming a solution

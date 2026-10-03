@@ -1,0 +1,12 @@
+{
+  "SKILL.md": "34f703a55904967b7526ecd8f6c47b0a87fb9627c7780e7b52388aa5aea2936a",
+  "LICENSE": "4354f079a1a6ec0c85820bbeae855ce9af363d77adedc3af9fb544401d792534",
+  "agents/openai.yaml": "a4a84c0816113e7fb8fcd60afd2212480e1d85ded7abbf6b42c9e6ecfb17f815",
+  "references/field-map.md": "9197ea79a1ad477c6984e88877f4deb4a3f64fb0a9fce3d2555bbe90441d1872",
+  "references/idea-test.md": "94c4b29635266c08f50ca2b31b2a025896e8300ec3597c916dc54dabdc80f1c6",
+  "references/result-diagnosis.md": "3643266628be61e3d3c29f35741bba3678912e1a970396e6fa72a772e11859ca",
+  "references/evidence-tools.md": "1e1966a2994eadfdbf0d54fd437009766d59ccd5edd1d5700d6f400d930343db",
+  "references/output-forms.md": "fee40e8bf94626a255f0cf9053358c8371f8926cf46cb78ad636e0bc8aef7d08",
+  "references/claim-design.md": "f0eefdefb1991fbfbc1b9769b2c679f779eb2a441ee58992a23ddac16fe71ff5",
+  "references/first-principles.md": "92694b0ad294c73471c133955b7fb4e70071b0f7b400cf5f3fc44d07c3d62001"
+}

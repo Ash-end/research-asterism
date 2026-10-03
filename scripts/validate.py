@@ -118,6 +118,23 @@ def validate(root, *, installed=False):
             raise ValueError('Scientific aggregate and per-case files must correspond exactly')
     except (ValueError, OSError, KeyError, TypeError) as exc:
         errors.append(f'scientific fixture structure: {exc}')
+    current=root/'evals/v0.5.0'
+    if current.is_dir():
+        try:
+            cases=[]
+            for name in ['development-cases.json','independent-cases.json']:
+                cases.extend(json.loads((current/name).read_text(encoding='utf-8'))['cases'])
+            ids=[c['id'] for c in cases]
+            if not ids or len(ids)!=len(set(ids)):
+                raise ValueError('Current cases need unique IDs')
+            for case in cases:
+                if not case['request'].strip() or not case['materials']:
+                    raise ValueError('Empty current request or materials')
+                raw=json.loads((current/'inputs'/f"{case['id']}.json").read_text(encoding='utf-8'))
+                if raw!=case:
+                    raise ValueError(f"Current aggregate/raw mismatch: {case['id']}")
+        except (ValueError,OSError,KeyError,TypeError) as exc:
+            errors.append(f'current fixture structure: {exc}')
     return errors
 
 

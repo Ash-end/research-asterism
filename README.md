@@ -1,10 +1,10 @@
 ![Research Asterism: frame questions, examine assumptions, choose an informative test](assets/banner.svg)
 
-[![Validate package](https://github.com/Ash-end/research-asterism/actions/workflows/validate.yml/badge.svg)](https://github.com/Ash-end/research-asterism/actions/workflows/validate.yml) [![MIT](assets/license.svg)](LICENSE) [![Version 0.4.1](assets/version.svg)](https://github.com/Ash-end/research-asterism/releases/tag/v0.4.1)
+[![Validate package](https://github.com/Ash-end/research-asterism/actions/workflows/validate.yml/badge.svg)](https://github.com/Ash-end/research-asterism/actions/workflows/validate.yml) [![MIT](assets/license.svg)](LICENSE) [![Version 0.5.0](assets/version.svg)](https://github.com/Ash-end/research-asterism/releases/tag/v0.5.0)
 
 # Research Asterism
 
-A portable **research-methodology** Agent Skill for framing questions, comparing methods, developing testable ideas and interpreting results. It starts with an actionable judgment, the evidence boundary and the next informative step.
+A portable **research-methodology** Agent Skill for framing questions, comparing methods, developing testable ideas and interpreting results. It helps researchers move from a reading collection to an understood method family, then to a concrete candidate and the next informative check.
 
 [中文](README.zh-CN.md) · [Website](https://ash-end.github.io/research-asterism/) · [Quick start](docs/GETTING-STARTED.md) · [Original guide](docs/HANDBOOK.md) · [Evaluation](docs/EVALUATION.md) · [Sources](SOURCES.md)
 
@@ -34,7 +34,7 @@ python 'C:\path\to\research-asterism\scripts\install_skill.py' --target '.agents
 python 'C:\path\to\research-asterism\scripts\install_skill.py' --target '.agents\skills\research-methodology' --check
 ```
 
-The installer validates the source, copies ten runtime files and refuses an existing target. It makes no network or model calls. Open a new host session to refresh discovery; other hosts can read `SKILL.md`, but automatic integration is not certified here. [Installation details and POSIX command](docs/GETTING-STARTED.md).
+The installer validates the source, copies eleven runtime files and refuses an existing target. It makes no network or model calls. Open a new host session to refresh discovery; other hosts can read `SKILL.md`, but automatic integration is not certified here. [Installation details and POSIX command](docs/GETTING-STARTED.md).
 
 ```text
 Use $research-methodology.
@@ -43,17 +43,19 @@ Help me frame the question, compare assumptions and choose what to check next.
 Do not run experiments.
 ```
 
-## Three modes, one evidence loop
+## A learning path with three compatible entry modes
 
-![Question → assumptions → limit → hypotheses → validation → decision, with iterative reading and retrieval](assets/workflow.svg)
+![Preparation and eight steps from batch reading to method construction, with feedback loops](assets/workflow.svg)
 
 | Mode | What it does | Detailed example |
 | --- | --- | --- |
-| Field and method map | Organizes mechanisms, assumptions and historical changes; separates needs from measured performance | [Population shift](site/workflows.html#map) |
-| Idea assessment and minimal test | Examines the claim, nearest neighbors, competing explanations and a decision-changing validation | [Incomparable reports](site/workflows.html#idea) |
+| Field and method map | Organizes mechanisms, assumptions and historical changes; compares needs with supported method properties | [Reference families](site/workflows.html#map) |
+| Idea assessment and minimal test | Examines the claim, nearest neighbors, competing explanations and a decision-changing validation | [Constructing refresh](site/workflows.html#idea) |
 | Result diagnosis and next step | Checks measurement, mechanism activation, uncertainty and the scope of positive or negative evidence | [Unstable differences](site/workflows.html#result) |
 
-**First-principles reasoning** is optional support within these modes: separate targets from observations; trace assumptions and constraints; transfer principles only with their conditions; derive competing predictions; distinguish delivery from the predicted mechanism response and the outcome, using independent predefined checks. A delivered intervention whose mechanism prediction fails is not automatically an invalid test. It complements literature and experiments. It does not turn intuition into fact or force every field into physics or mathematical axioms.
+The [preparation and eight-step learning path](references/learning-path.md) supports a novice through batch orientation, family chronology, productive reading, mechanism understanding, revised search, two tables, cause analysis and actual method construction. Existing projects enter locally.
+
+**First-principles reasoning** is embedded support within these modes: separate targets from observations; trace assumptions and constraints; transfer principles only with their conditions; derive competing predictions; distinguish delivery from the predicted mechanism response and the outcome, using independent predefined checks. A delivered intervention whose mechanism prediction fails is not automatically an invalid test. It complements literature and experiments. It does not turn intuition into fact or force every field into physics or mathematical axioms.
 
 ## A compact example
 
@@ -66,7 +68,7 @@ This is an analytical example, not a new empirical finding. [More synthetic inpu
 ## Evidence and execution boundaries
 
 - Label source reports, inferences and untested hypotheses. A citation must support the specific claim and conditions.
-- Keep requirements, assumptions, evidence status and actual performance separate. No measurement means no data; incompatible protocols do not establish a ranking.
+- Keep requirements separate from method properties. Source reports, conditional derivations, measured results and untested hypotheses have distinct support labels. No measurement means no empirical estimate; incompatible protocols do not establish a ranking.
 - Use the relevant evidence obligation for descriptive, predictive, causal, measurement, theoretical and qualitative work. Prediction does not identify causality; a null result does not establish equivalence.
 - Search nearest neighbors, including older equivalent ideas. A failed search or module combination does not establish novelty.
 - Detect the tools available now. Missing retrieval yields a provisional plan with explicit uncertainty. Data, experiments, paid tools and publication require the current task's authority.
@@ -77,8 +79,7 @@ The skill does not resume old research, train models or disclose materials autom
 
 The historical v0.3.0 six-case development run used fresh with/without contexts and the same answer ceiling. Two masked comparators, with positions reversed, preferred the skill in **4/6 and 3/6** cases; the reverse comparison preferred the baseline once. They disagreed on two cases. These are development regressions, not held-out effectiveness evidence; actual lengths differed by +4.6% with the skill.
 
-v0.4.0 adds assumption-led guidance. Its new author-run sanity checks are explicitly separate; **no new independent with/without comparison has been run**. Historical raw outputs and fingerprints are preserved, with the former entrypoint versioned. [Results, limitations and reproducible records](docs/EVALUATION.md).
-
+v0.5.0 adds a constructive learning path and corrects the old restriction of all method properties to measured outcomes. Actual balanced/reversed comparisons prefer new/old/tie in 1/1/8 and 2/2/6 cases. These mixed results do not establish general superiority; the new answer overprocesses a novice reading task. New development comparisons are reported separately in [current evaluation](docs/EVALUATION.md); historical results are not reused as current-version evidence.
 ```sh
 python scripts/validate.py .
 python -m unittest discover -s tests -v

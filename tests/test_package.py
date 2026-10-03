@@ -98,7 +98,7 @@ class PackageTests(unittest.TestCase):
     def test_runtime_install_excludes_docs_and_retains_entrypoint(self):
         target=Path(self.temp.name)/'project/.agents/skills/research-methodology'
         result=install(self.root,target)
-        self.assertEqual(result['runtime_files'],10)
+        self.assertEqual(result['runtime_files'],11)
         self.assertTrue((target/'SKILL.md').is_file())
         self.assertTrue((target/'references/claim-design.md').is_file())
         self.assertFalse((target/'docs').exists())
@@ -119,6 +119,24 @@ class PackageTests(unittest.TestCase):
         old=self.root/'evals/snapshots/v0.3.0/SKILL.md'
         old.write_bytes(old.read_bytes()+b'changed historical bytes')
         self.assertFalse(all(c['ok'] for c in verify(self.root)))
+
+    def test_current_evaluation_output_drift_is_detected(self):
+        self.assertTrue(all(c['ok'] for c in verify(self.root)))
+        output=self.root/'evals/v0.5.0/outputs/d01-a.md'
+        output.write_bytes(output.read_bytes()+b'changed retained behavior output')
+        self.assertFalse(all(c['ok'] for c in verify(self.root)))
+
+    def test_comparison_baseline_drift_is_detected(self):
+        baseline=self.root/'evals/snapshots/v0.4.1/references/first-principles.md'
+        baseline.write_bytes(baseline.read_bytes()+b'changed comparison baseline')
+        self.assertFalse(all(c['ok'] for c in verify(self.root)))
+
+    def test_current_raw_case_drift_is_reported(self):
+        path=self.root/'evals/v0.5.0/inputs/i01.json'
+        raw=json.loads(path.read_text(encoding='utf-8'))
+        raw['request']+=' divergent raw fixture'
+        path.write_text(json.dumps(raw),encoding='utf-8')
+        self.assertTrue(any('Current aggregate/raw mismatch' in e for e in validate(self.root)))
 
 
 if __name__ == '__main__':

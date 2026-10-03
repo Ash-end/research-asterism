@@ -26,7 +26,7 @@ python /path/to/research-asterism/scripts/install_skill.py --target .agents/skil
 python /path/to/research-asterism/scripts/install_skill.py --target .agents/skills/research-methodology --check
 ```
 
-The installer copies only the ten runtime files: entrypoint, seven references, host metadata and license. It validates the complete source first, refuses an existing target, and never overwrites a prior installation or project notes. `--check` compares installed bytes with the selected source without writing. For updates, review the release and use your host's normal reviewed replacement procedure; automatic in-place upgrades are intentionally not provided.
+The installer copies only the eleven runtime files: entrypoint, eight references, host metadata and license. It validates the complete source first, refuses an existing target, and never overwrites a prior installation or project notes. `--check` compares installed bytes with the selected source without writing. For updates, review the release and use your host's normal reviewed replacement procedure; automatic in-place upgrades are intentionally not provided.
 
 在目标项目重新开启会话，让宿主刷新技能发现。若列表中仍未出现，可明确要求助手读取源码或安装目录的 `SKILL.md`；这能使用指令，但不等于验证宿主的自动发现。
 
@@ -46,6 +46,10 @@ I have not supplied papers or data. Do not run experiments.
 ```
 
 A topic alone is enough. For existing work, add the current decision, relevant materials, known constraints and any earlier results that matter. Provide private data only through an authorized channel; the skill does not upload it automatically.
+
+## Learning and local entry
+
+For a novice, ask for the preparation and eight-step [learning path](../references/learning-path.md): batch orientation, family evolution, productive reading, corrected mechanism understanding, family synthesis, revised retrieval, two tables, cause analysis and concrete construction. For an established project, identify the current node. A formula question can receive a short derivation; a collaborative method request should receive actual operations or a relation, conditions, cost and a discriminating next check.
 
 ## What the answer should make clear
 

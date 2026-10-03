@@ -8,7 +8,7 @@ The host discovers `research-methodology` from metadata. It reads the short entr
 research-methodology/
   SKILL.md                 routing and shared reasoning
   agents/openai.yaml       Codex display metadata
-  references/              seven resources loaded by need
+  references/              eight resources loaded by need
   docs/                    human-facing guide and maintenance notes
   examples/                synthetic input/output examples
   evals/                   raw fixtures, historical runs and limits
@@ -25,3 +25,5 @@ The first-principles reference supplements the three modes; it does not introduc
 The website uses local assets, system fonts and a small script for accessible tabs and copy controls. It contains no analytics, remote font, model endpoint or embedded private file. Tables report missing measurements explicitly. Scientific validity is assessed through claim support and human review, separately from these technical checks.
 
 The public repository is a dedicated export of this skill. Parent collections, machine paths, recovery material, private source identifiers and domain-specific project histories are excluded. MIT covers only original, authorized repository material.
+
+The new learning-path reference centralizes preparation and eight iterative steps. First-principles reasoning is embedded at relevant nodes; existing three mode routes remain compatible. Method tables permit supported reports and conditional derivations while retaining empirical-estimate boundaries. The v0.4.1 runtime snapshot preserves the actual old/new comparison baseline.

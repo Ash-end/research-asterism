@@ -8,4 +8,4 @@ Before publishing, validate the source, run applicable regressions, inspect a cl
 
 The Pages website uses root `index.html` to redirect into `site/`. Ordinary About description, homepage and topics can be maintained with the repository owner’s authorization. Security/access settings are separate. Social-preview assets are included; their presence does not assert that GitHub's custom social-image setting has been configured.
 
-Release notes should identify the behavior change and the lack of a new independent effectiveness benchmark. Create a versioned release only for an actual published commit; do not use invented DOI, scientific citation counts or endorsements.
+Release notes should identify the behavior change and the scope and limits of any actual new independent development comparisons. Create a versioned release only for an actual published commit; do not use invented DOI, scientific citation counts or endorsements.

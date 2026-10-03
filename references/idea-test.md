@@ -1,41 +1,40 @@
-# Idea assessment and minimal validation
+# Constructing and assessing ideas
 
-Use for a proposed mechanism, a contribution claim, prioritization, or joint ideation. Assess the idea's promise separately from whether it is already established.
+Use for collaborative ideation, a proposed mechanism, contribution claims or a minimal validation. Start with a useful candidate or judgment; evidence checking calibrates construction rather than indefinitely postponing it. For the whole reading-to-method route see [learning path](learning-path.md).
 
-## Make the claim examinable
+## From a meaningful limitation to an operative method
 
-Translate the proposal into a question: in a stated setting, does a defined change improve or explain a meaningful outcome relative to a relevant alternative, and under which conditions? Identify the evidence for the need and for the proposed causal or logical connection. If the user starts with a solution, seek a real failure it could address. If they start with a failure, inspect competing explanations before selecting a technique.
+Identify the target and actual need, the existing advantage worth retaining, and the premise or cause behind an unmet need. Separate a demonstrated limitation from an inferred cause and an evidence gap. If the user starts with a solution, find the failure it could address. If they start with a failure, consider consequential rival causes.
 
-Determine whether the intended claim concerns a description, prediction, causal effect, measurement or theory, including mixed or qualitative interpretations. Define its target and conditions using the relevant [design branch](claim-design.md). Do not treat a predictive improvement as identification of a causal mechanism or a repeatable proxy as measurement validity.
+Construct a candidate with:
 
-For collaborative ideation, derive candidates from a demonstrated limitation, a changed condition, a useful boundary, an analogy whose assumptions transfer, or an unexplained observation. Explain the evidential starting point and the speculative step. Vary the mechanism or question, not only module names. The amount of divergence should fit the decision and available evidence; do not force a candidate count.
+- Inputs/information access and outputs or target relation.
+- State, representation or explanatory object when relevant.
+- Actual operations or a logical dependency route, including timing/decision rules that matter.
+- The limiting premise relaxed or failure cause avoided; the advantage retained.
+- Compatibility conditions, cost and new limitation.
+- Evidential starting point, speculative step and discriminating prediction.
 
-## Compare the nearest neighbors
+An algorithm should be executable in principle; a theory idea needs a statement, domain and argument route; a qualitative idea needs a concrete relation to materials and rival readings. “A + B” is not enough until their interfaces, mechanism and consequences are specified. Do not force a candidate quota. A simple or established procedure is acceptable if it answers the need.
 
-Compare problem formulation, mechanism, assumptions, information access, evaluation setting, and established result. Search older terms and structurally equivalent approaches when retrieval is available. A title difference or new application name is weak differentiation.
+For example, after identifying stale references as a bias-correction limitation, specify when to sample a known reference, how to maintain a bias estimate, how to correct subsequent readings, and the budget and jump-delay tradeoff. If a reference costs 20 ms in addition to a 2 ms ordinary reading every K readings, mean cost is `2+20/K`; replacing a reading gives a different cost. Changes in an arbitrary unknown signal alone do not identify bias. This is a conditional construction, not a novelty or measured-performance claim.
 
-Describe the residual contribution after subtracting what neighbors already establish. Possibilities include a justified new condition, a mechanism explanation, a nontrivial efficiency improvement, a new measurement, or a documented boundary. These are candidate contribution types, not guaranteed novelty. Report search scope and unresolved neighbors. If supplied evidence already describes the same mechanism, acknowledge the overlap directly.
+## Calibrate contribution with neighbors and conditions
 
-Assess relevance, differentiation, plausibility, resource feasibility, and evidence strength separately. A useful engineering adaptation can be worth doing even if its research contribution remains uncertain. A novel-looking claim can be untestable or unimportant.
+Compare problem, mechanism, assumptions, information access, evaluation setting and established results. When tools exist, search older terminology and structurally equivalent approaches. Report scope and unverified neighbors; no search hit does not prove novelty. Explain the residual claim after known work: a new justified condition, mechanism explanation, efficiency result, measurement or boundary may be meaningful, but none is guaranteed by a name or module list.
 
-## Choose a discriminating test
+Do not discard a useful idea merely because one component is classical. Separate usefulness, differentiation, plausibility, feasibility and support. If the classic method already suffices, recommend it. If overlap is strong, narrow the contribution honestly and keep the useful construction.
 
-State the favored hypothesis and a credible rival with predictions that differ. Choose the smallest authorized check that can separate them: a source comparison, toy calculation, counterexample, matched re-analysis, ablation, or pilot. Do not offer only a large benchmark or full training run.
+Use [first-principles moves](first-principles.md) for causal/logical dependencies and conditional cross-domain transfer. Determine whether the intended claim is descriptive, predictive, causal, measurement, theoretical or qualitative; select [design obligations](claim-design.md) rather than imposing one statistical template.
 
-Specify, as applicable:
+## Choose the smallest discriminating check
 
-- Intervention or variable, baseline, matched data and information access, tuning or resource budget.
-- Assignment, independent sampling and measurement units where relevant; validation populations/times and how repeated or nested observations are handled.
-- What the outcome measures; an operationally meaningful threshold or justified equivalence margin.
-- A negative control, boundary case, or ablation that distinguishes mechanism from artifact.
-- Uncertainty assessment and whether available repetitions or observations can resolve the relevant effect.
-- Execution resources and data constraints that are known versus still unresolved.
-- Interpretation before observing outcomes: continue, adjust, stop this formulation, or remain inconclusive.
+State a favored explanation and a credible rival with different predictions. Choose a source comparison, toy derivation, counterexample, matched re-analysis, intervention check, ablation or pilot that can change the decision. Reject a cheap check that predicts the same result under all consequential explanations.
 
-If a proposed numerical cutoff has no stakeholder or scientific basis, label it provisional and ask how to set it. Avoid retrospective threshold selection. Separate exploration on already-seen data from confirmation on new or untouched data. Do not use the same observations to generate a hypothesis and claim independent confirmation.
+As relevant, define the intervention and matched comparator, information access, resource/tuning basis, assignment/sampling/measurement units, outcome, uncertainty and meaningful decision threshold. Distinguish fixed budget from fixed quality; average and worst-case latency can serve different needs. Label unsupported numerical cutoffs provisional. Separate seen-data exploration from untouched confirmation. Do not promise a large training run when a simpler check resolves the premise.
 
-## Close the decision
+Before outcomes, state continue, adjust, stop this formulation or inconclusive interpretations. Check intervention delivery, predicted mediator and outcome with independent predefined measures. A delivered intervention with an absent predicted mediator can contradict that link under a valid sufficiently precise test; it is not automatically an invalid test. Preserve the failed prediction. A positive result motivates the strongest alternative explanation and an informative boundary, not automatic generality.
 
-Recommend the next check, its expected information gain, and the consequence of each informative outcome. If evidence is too weak, choose a source check or feasibility probe before expensive implementation. If overlap with prior work is strong, narrow or redirect the contribution rather than inventing novelty. A failed candidate may still reveal a useful boundary, but that boundary also requires evidence and nearest-neighbor checking.
+## Finish with progress
 
-Reject a cheap check that would return the same prediction under all consequential explanations. Seek the smallest sufficient design or analytical argument. Define whether a resource comparison fixes the budget or fixes the target quality; do not silently switch between them. A low fitting error does not establish parameter identifiability or mechanism validity.
+Give the next authorized action, why it has decision value, what remains uncertain and what would reverse the recommendation. Do not execute experiments, paid tools or old project scripts merely because a candidate is specified. Use the project's existing record only when appropriate.

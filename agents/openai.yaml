@@ -1,6 +1,4 @@
 interface:
-  display_name: "Research Asterism"
-  short_description: "Frame claims, assess evidence and design validation"
-  default_prompt: "Use $research-methodology to assess my current research question and choose the next useful validation."
-policy:
-  allow_implicit_invocation: true
+  display_name: "Research Methodology"
+  short_description: "Learn methods, construct ideas, test and interpret evidence"
+  default_prompt: "Use $research-methodology to advance my current research question: organize the material, explain mechanisms and conditions, construct a concrete candidate when useful, and choose the next informative check."
